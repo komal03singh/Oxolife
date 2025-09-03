@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Preloader from "./Preloader";
+import Preloader from "@/Components/PreLoader";
 
 export default function RootProvider({ children }) {
   const [done, setDone] = useState(false);

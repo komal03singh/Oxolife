@@ -1,5 +1,5 @@
 "use client";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/Components/ProductCard";
 import { useState, useEffect } from "react";
 
 export default function CPAPandBiPAPage() {
