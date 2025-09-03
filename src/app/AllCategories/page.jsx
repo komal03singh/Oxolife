@@ -1,41 +1,37 @@
 "use client";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/Components/ProductCard";
 import { useState, useEffect } from "react";
 
-export default function OxygenConcentratorsPage() {
-  const [oxygenProducts, setOxygenProducts] = useState([]);
-  const [oxygenPage, setOxygenPage] = useState(1);
-  const [oxygenTotal, setOxygenTotal] = useState(1);
+export default function AllProductsPage() {
+
+  const [allProducts, setAllProducts] = useState([]);
+  const [allPage, setAllPage] = useState(1);
+  const [allTotal, setAllTotal] = useState(1);
   const limit = 6;
 
   useEffect(() => {
-    async function fetchOxygen() {
-      const resOxygen = await fetch(
-        `/api/products?type=oxygen-concentrators&page=${oxygenPage}&limit=${limit}`
-      );
-      const data = await resOxygen.json();
-      setOxygenProducts(data.data);
-      setOxygenTotal(data.totalPages);
+    async function fetchAll() {
+      const res = await fetch(`/api/products?page=${allPage}&limit=${limit}`);
+      const data = await res.json();
+      setAllProducts(data.data);
+      setAllTotal(data.totalPages);
     }
-    fetchOxygen();
-  }, [oxygenPage]);
+    fetchAll();
+  }, [allPage]);
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mt-10 mb-6">Oxygen Concentrators</h1>
+      <h1 className="text-2xl font-bold mb-6">All Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {oxygenProducts.map((product) => (
+        {allProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-      <Pagination
-        page={oxygenPage}
-        total={oxygenTotal}
-        setPage={setOxygenPage}
-      />
+      <Pagination page={allPage} total={allTotal} setPage={setAllPage} />
     </div>
   );
 }
+
 
 function Pagination({ page, total, setPage }) {
   return (
@@ -62,3 +58,4 @@ function Pagination({ page, total, setPage }) {
     </div>
   );
 }
+
