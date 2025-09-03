@@ -92,13 +92,13 @@ export default function CartPage() {
               <div className="flex gap-4">
                 <button
                   onClick={clearCart}
-                  className="px-4 py-2 bg-black text-white rounded-full cursor-pointer"
+                  className="px-6 py-1 lg:px-4 lg:py-2 bg-black text-white rounded-full cursor-pointer"
                 >
                   Clear Cart
                 </button>
                 <Link
                   href="/HomePage"
-                  className="px-4 py-2 bg-[#B2EBF2]/80 font-medium rounded-full cursor-pointer"
+                  className="flex px-4 py-1 lg:py-2 items-center bg-[#B2EBF2]/80 font-medium rounded-full cursor-pointer"
                 >
                   Checkout
                 </Link>
