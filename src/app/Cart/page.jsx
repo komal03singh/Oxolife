@@ -30,7 +30,7 @@ export default function CartPage() {
               {cart.map((item) => (
                 <div
                   key={item.id}
-                  className="flex items-center justify-between border-b border-black/15 w-full p-4"
+                  className="flex flex-col gap-3 lg:flex-row items-center justify-between border-b border-black/15 w-full p-4 lg:gap-0"
                 >
                   <div>
                     <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ export default function CartPage() {
                         height={100}
                       />
                       <div>
-                        <h2 className="font-light text-lg w-5/6">
+                        <h2 className="font-light text-base md:text-lg lg:text-lg w-5/6">
                           {item.name}
                         </h2>
                         <p className="font-medium text-lg">₹{item.price}</p>
