@@ -8,13 +8,13 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 import { FaRegHandshake } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link"
 
 function HomePage() {
   const images = [
     "/homepageAsset/oxygenConcentrator.png",
     "/homepageAsset/CPAP.png",
-    "/homepageAsset/Wheelchair.png",
+    "/homepageAsset/wheelchair.png",
   ];
   const Items = [
     "Home and Portable Oxygen Concentrators",
@@ -56,6 +56,7 @@ function HomePage() {
                 </motion.p>
               </span>
             </h4>
+          <Link href="/AllCategories">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -66,6 +67,7 @@ function HomePage() {
                 <BsHandbag />
               </span>
             </motion.button>
+          </Link>
           </div>
 
           {/* RIGHT CAROUSEL STACK */}
