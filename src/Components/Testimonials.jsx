@@ -31,10 +31,10 @@ const testimonials = [
 function Testimonials() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h1 className="h-[90px] w-full flex items-center justify-center text-3xl font-semibold bg-[#B2EBF2]/60">
+      <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#B2EBF2]/60">
         Customer Reviews
       </h1>
-      <h2 className="text-3xl font-light text-center m-10">
+      <h2 className="text-xl lg:text-3xl font-light text-center m-10">
         Hear From Our Customers
       </h2>
 

@@ -33,20 +33,20 @@ function HomePage() {
   return (
     <div className="flex flex-col gap-6 w-full min-h-screen h-auto">
       {/* Hero Section */}
-      <div className="h-[480px] w-full">
-        <div className="flex flex-row h-[380px] w-full">
+      <div className="h-auto md:h-auto lg:h-[480px] w-full lg:mt-0 mt-5">
+        <div className="flex flex-col md:flex-row lg:flex-row h-[380px] w-full gap-5">
           {/* LEFT CONTENT */}
-          <div className="w-1/2 flex flex-col gap-2">
-            <h1 className="text-6xl font-semibold w-[80%] ml-6 mt-10">
+          <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-8">
               Quality Medical Equipment for Everyone
             </h1>
-            <h4 className="text-lg w-full ml-6">
+            <h4 className="text-sm w-[80%] md:text-lg lg:text-lg lg:w-full lg:ml-6">
               OxoLife is a leading provider of high-quality medical equipment
               like{" "}
               <span>
                 <motion.p
                   key={index}
-                  className="text-xl font-semibold text-[#26C6DA]"
+                  className="text:sm h-10 md:text-lg lg:text-xl font-semibold text-[#26C6DA]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -60,10 +60,10 @@ function HomePage() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-2 w-[35%] h-12 ml-6 rounded-full bg-[#B2EBF2]/60 font-semibold text-lg mt-5 hover:cursor-pointer"
+              className="flex items-center justify-center gap-2 lg:w-[180px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-[#B2EBF2]/60 font-semibold text-sm lg:text-lg md:mt-5 lg:mt-1 hover:cursor-pointer"
             >
               Buy Now
-              <span className="text-xl flex items-center">
+              <span className="text-base lg:text-xl flex items-center">
                 <BsHandbag />
               </span>
             </motion.button>
@@ -71,7 +71,7 @@ function HomePage() {
           </div>
 
           {/* RIGHT CAROUSEL STACK */}
-          <div className="w-1/2 flex items-center justify-center relative">
+          <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center items-center justify-center relative">
             {images.map((src, i) => {
               const position = (i - index + images.length) % images.length;
 
@@ -91,7 +91,7 @@ function HomePage() {
                 <motion.img
                   key={i}
                   src={src}
-                  className="absolute w-58 h-58 bg-[#6BBF8A]/40 object-contain rounded-full p-4 shadow-xl"
+                  className="absolute w-30 h-30 md:h-50 md:w-50 lg:w-58 lg:h-58 bg-[#6BBF8A]/40 object-contain rounded-full p-4 shadow-xl"
                   animate={style}
                   initial={false}
                   transition={{ duration: 0.8 }}
@@ -100,42 +100,42 @@ function HomePage() {
             })}
           </div>
         </div>
-        <div className="flex justify-center h-[100px] w-full bg-[#26C6DA]/30">
-          <ul className="w-full flex flex-row items-center justify-center gap-15">
+        <div className="flex justify-center mt-4 lg:mt-0 h-[80px] lg:h-[100px] w-full bg-[#26C6DA]/30">
+          <ul className="w-full flex flex-row items-center justify-center gap-3 lg:gap-15">
             <li className="flex flex-col items-center">
-              <span className="text-4xl">
+              <span className="text-xl lg:text-4xl">
                 <TbTruckDelivery />
               </span>
-              <h4 className="text-sm font-semibold">Free & Fast Delivery</h4>
-              <p className="text-xs">All Over India</p>
+              <h4 className="text-xs lg:text-sm text-center font-semibold">Free & Fast Delivery</h4>
+              <p className="text-[9px] lg:text-xs">All Over India</p>
             </li>
             <li className="flex flex-col items-center">
-              <span className="text-4xl">
+              <span className="text-xl lg:text-4xl">
                 <RiSecurePaymentLine />
               </span>
-              <h4 className="text-sm font-semibold">Easy & Secure Payments</h4>
-              <p className="text-xs">UPI . COD . EMI</p>
+              <h4 className="text-xs lg:text-sm font-semibold text-center">Easy & Secure Payments</h4>
+              <p className="text-[9px] lg:text-xs">UPI . COD . EMI</p>
             </li>
             <li className="flex flex-col items-center">
-              <span className="text-4xl">
+              <span className="text-xl lg:text-4xl">
                 <FaRegHandshake />
               </span>
-              <h4 className="text-sm font-semibold">
+              <h4 className="text-xs lg:text-sm font-semibold text-center">
                 Assured Quality Equipments
               </h4>
-              <p className="text-xs">100% Original</p>
+              <p className="text-[9px] lg:text-xs">100% Original</p>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Product Range Slider */}
-      <div className="w-full h-[600px] mt-2">
+      <div className="w-full h-auto md:h-auto lg:h-[600px] mt-2">
         <ProductRange />
       </div>
 
       {/* BestSeller Slider */}
-      <div className="w-full h-[1400px] mt-2">
+      <div className="w-full h-auto md:h-auto lg:h-[1400px] mt-2">
         <Bestseller />
       </div>
       {/* Testimonals */}

@@ -65,7 +65,7 @@ function Header() {
           Trusted Equipments, Trusted Care
         </h1>
       </div>
-      {/*large small header*/}
+      {/*small screen header*/}
       <div className="flex flex-col md:hidden lg:hidden h-32 w-full gap-3 ">
         <div className="flex">
           <div className="h-18 w-[40%] px-4 py-2">
@@ -129,11 +129,43 @@ function Header() {
           </div>
           {/* Mobile Hamburger */}
           <button
-            className="lg:hidden text-3xl flex justify-end items-center"
+            className="relative lg:hidden text-3xl flex justify-end items-center"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+
+            {menuOpen && (
+        <motion.div 
+        initial={{ x: 10, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.5, ease: "easeOut" }}
+        className="absolute top-8 -left-54 z-20 lg:hidden bg-[#B2EBF2] p-2 py-6 h-80 w-65">
+          <ul className="flex flex-col gap-4 text-sm">
+            <li>
+              <Link href="/Homepage">Home</Link>
+            </li>
+            <li>
+              <Link href="/AllCategories">All Categories</Link>
+            </li>
+            <li>
+              <Link href="/AllCategories/OxygenConcentrators">
+                Oxygen Concentrators
+              </Link>
+            </li>
+            <li>
+              <Link href="/AllCategories/CPAPandBiPAP">CPAP/BiPAP</Link>
+            </li>
+            <li>
+              <Link href="/AllCategories/Wheelchairs">Wheelchairs</Link>
+            </li>
+            <li>
+              <Link href="">Product Guides</Link>
+            </li>
+          </ul>
+        </motion.div>
+      )}
           </button>
+            
         </div>
       </div>
       {/*large screen header*/}

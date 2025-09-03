@@ -37,14 +37,14 @@ function Bestseller() {
 
   return (
     <div className="flex flex-col w-full h-full">
-      <h1 className="h-[90px] flex items-center justify-center text-3xl font-semibold bg-[#B2EBF2]/60">
+      <h1 className="h-[70px] lg:h-[90px] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#B2EBF2]/60">
         Bestsellers
       </h1>
 
       <div className="flex flex-col w-full h-auto gap-4 mt-3">
         {/* Oxygen Concentrators */}
-        <div className="h-[400px] w-full p-4">
-          <h3 className="text-lg font-semibold mb-5">Oxygen Concentrators</h3>
+        <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
+          <h3 className="text-base lg:text-lg font-semibold mb-5">Oxygen Concentrators</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {oxygenProducts.map((p) => (
               <motion.div
@@ -55,7 +55,7 @@ function Bestseller() {
                 key={p.id}
                 className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
-                <div className="relative w-full h-48 mb-4">
+                <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
                     src={p.img}
                     alt={p.name}
@@ -64,10 +64,10 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-base text-left w-full">
+                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
                   </p>
-                  <p className="font-medium text-base text-left w-full">
+                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
                     ₹{p.price}
                   </p>
                 </div>
@@ -77,7 +77,7 @@ function Bestseller() {
         </div>
 
         {/* CPAP & BiPAP */}
-        <div className="h-[400px] w-full p-4">
+        <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
           <h3 className="text-lg font-semibold mb-5">CPAP and BiPAP</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {cpapProducts.map((p) => (
@@ -89,7 +89,7 @@ function Bestseller() {
                 key={p.id}
                 className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
-                <div className="relative w-full h-48 mb-4">
+                <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
                     src={p.img}
                     alt={p.name}
@@ -98,10 +98,10 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-base text-left w-full">
+                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
                   </p>
-                  <p className="font-medium text-base text-left w-full">
+                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
                     ₹{p.price}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ function Bestseller() {
         </div>
 
         {/* wheelchairs */}
-        <div className="h-[400px] w-full p-4">
+        <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
           <h3 className="text-lg font-semibold mb-5">Wheelchairs</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {wheelchairProducts.map((p) => (
@@ -123,7 +123,7 @@ function Bestseller() {
                 key={p.id}
                 className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
-                <div className="relative w-full h-48 mb-4">
+                <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
                     src={p.img}
                     alt={p.name}
@@ -132,10 +132,10 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-base text-left w-full">
+                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
                   </p>
-                  <p className="font-medium text-base text-left w-full">
+                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
                     ₹{p.price}
                   </p>
                 </div>
