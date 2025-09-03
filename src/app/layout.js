@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${montserrat.className} bg-[#FFFFED]`}
+        className={`${montserrat.className}`}
       >
         <RootProvider>
           <CartProvider>
