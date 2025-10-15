@@ -14,12 +14,12 @@ function HomePage() {
   const images = [
     "/homepageAsset/oxygenConcentrator.png",
     "/homepageAsset/CPAP.png",
-    "/homepageAsset/wheelchair.png",
+    "/homepageAsset/endoscopy-camera.png",
   ];
   const Items = [
     "Home and Portable Oxygen Concentrators",
     "CPAP/BiPAP",
-    "Electric Wheelchairs",
+    "Endoscopy Cameras",
   ];
   const [index, setIndex] = useState(0);
 
@@ -37,11 +37,11 @@ function HomePage() {
         <div className="flex flex-col md:flex-row lg:flex-row h-[380px] w-full gap-5">
           {/* LEFT CONTENT */}
           <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-8">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-8 tracking-wide">
               Quality Medical Equipment for Everyone
             </h1>
             <h4 className="text-sm w-[80%] md:text-lg lg:text-lg lg:w-full lg:ml-6">
-              OxoLife is a leading provider of high-quality medical equipment
+              SNK Global is your trusted partner for top-quality medical machinery
               like{" "}
               <span>
                 <motion.p

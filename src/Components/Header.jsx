@@ -156,7 +156,7 @@ function Header() {
               <Link href="/AllCategories/CPAPandBiPAP">CPAP/BiPAP</Link>
             </li>
             <li>
-              <Link href="/AllCategories/Wheelchairs">Wheelchairs</Link>
+              <Link href="/AllCategories/Wheelchairs">Patient Monitoring System</Link>
             </li>
             <li>
               <Link href="">Product Guides</Link>
@@ -278,12 +278,6 @@ function Header() {
                       href="/AllCategories?type=oxygen-concentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      8 LPM
-                    </Link>
-                    <Link
-                      href="/AllCategories?type=oxygen-concentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
                       10 LPM
                     </Link>
                     <Link
@@ -296,19 +290,19 @@ function Header() {
                       href="/AllCategories?type=oxygen-concentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Dual Flow
+                      Used Concentrators
                     </Link>
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Adjustable Purity
+                     Concentrators on rent
                     </Link>
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-[#56c1cf]  hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      9 LPM
+                     View More
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -316,61 +310,37 @@ function Header() {
                       href="/AllCategories/OxygenConcentrators"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      Oxygen Concentrator Accessories
+                      CPAP Machines
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Filter
+                      Resmed Airsense 11 CPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Humidifier Bottle
+                      ResMed AirCurve 10 Vauto CPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Nasal Cannula
+                      Resmed Airmini AutoSet CPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Oxygen Mask
+                      Deck Mount Respirare VT 30D Compact CPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-[#56c1cf] hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Connector Tube
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Battery
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Charger
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Backpack
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Water Trap
+                      View More
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -378,25 +348,25 @@ function Header() {
                       href="/AllCategories/OxygenConcentrators"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      Oxygen Concentrator Rental
+                      BiPAP Machines
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      5 Liter Oxygen Concentrator on Rent
+                      Philips BiPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      10 Liter Oxygen Concentrator on Rent
+                      Yuwell YH 830 Breathcare BiPAP Machine
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Portable Oxygen Concentrator on Rent
+                      Deck Mount  VT300 ST BiPAP Machine
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -404,19 +374,25 @@ function Header() {
                       href="/AllCategories/CPAPandBiPAP"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      CPAP & BiPAP
+                      Endoscopy Camera
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      CPAP
+                      CYMO 6160  USB Recording HD Endoscopy Camera
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      BiPAP
+                     CYMO 6698 Endoscopy USB Recording Camera
+                    </Link>
+                    <Link
+                      href="/AllCategories/CPAPandBiPAP"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
+                    >
+                     CYMO 1156.08 High Resolution Endoscopy Camera
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -424,19 +400,25 @@ function Header() {
                       href="/AllCategories/CPAPandBiPAP"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      CPAP & BiPAP Rental
+                      Patient Monitoring System
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      CPAP Machine on Rent
+                      Yonker 8000C Preconfigured Monitor
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      BiPAP Machine on Rent
+                      Unicare Multi Parameter Patient Monitor                       
+                    </Link>
+                    <Link
+                      href="/AllCategories/CPAPandBiPAP"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
+                    >
+                      Stryker 1488 HD  Surgeon Customization                       
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -444,43 +426,19 @@ function Header() {
                       href="/AllCategories/CPAPandBiPAP"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      CPAP & BiPAP Accessories
+                      Electrosurgical Unit
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Humidifier
+                      VEGA400 Electro Surgical Cautery
                     </Link>
                     <Link
                       href="/AllCategories/CPAPandBiPAP"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Mask
-                    </Link>
-                    <Link
-                      href="/AllCategories/CPAPandBiPAP"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Tube
-                    </Link>
-                    <Link
-                      href="/AllCategories/CPAPandBiPAP"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Power Supply
-                    </Link>
-                    <Link
-                      href="/AllCategories/CPAPandBiPAP"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      CPAP/BiPAP Battery
-                    </Link>
-                    <Link
-                      href="/AllCategories/CPAPandBiPAP"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      CPAP/BiPAP Filter
+                     400 PPSY Electro Surgical Cautery
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -488,43 +446,19 @@ function Header() {
                       href="/AllCategories/Wheelchairs"
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      Wheelchair
+                      CPAP Mask
                     </Link>
                     <Link
                       href="/AllCategories/Wheelchairs"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Foldable Wheelchair (Manual)
+                      ResMed AirFit F20 Full Face  Mask
                     </Link>
                     <Link
                       href="/AllCategories/Wheelchairs"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Commodable WheelChair
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Pediatric Wheelchair
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Electric Wheelchair (Motorized)
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Transport Wheelchair
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Stair Climbing Wheelchair
+                      ResMed AirFit F20 Full Face  Mask
                     </Link>
                   </div>
                   <div className="flex flex-col">
@@ -532,13 +466,13 @@ function Header() {
                       href=""
                       className="hover:text-[#37a9b8] font-semibold pb-1.5 px-3 text-base"
                     >
-                      Sleep Test
+                      Explore All
                     </Link>
                     <Link
                       href=""
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Sleep Test
+                      Explore All
                     </Link>
                   </div>
                 </div>
@@ -563,12 +497,6 @@ function Header() {
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      8 LPM
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
                       10 LPM
                     </Link>
                     <Link
@@ -581,19 +509,13 @@ function Header() {
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Dual Flow
+                      Used Concentrators
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Adjustable Purity
-                    </Link>
-                    <Link
-                      href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      9 LPM
+                      Concentrators on Rent
                     </Link>
                   </div>
                 </div>
@@ -629,7 +551,7 @@ function Header() {
                   href="/AllCategories/Wheelchairs"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
-                  Wheelchairs
+                  Endoscopy Cameras
                 </Link>
                 <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute left-0 mt-2 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#F5F5F5] w-[250px] gap-4 z-40">
                   <div className="flex flex-col">
@@ -637,37 +559,19 @@ function Header() {
                       href="/AllCategories/Wheelchairs"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Foldable Wheelchair (Manual)
+                      CYMO 6160  USB Recording HD Endoscopy Camera
                     </Link>
                     <Link
                       href="/AllCategories/Wheelchairs"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Commodable WheelChair
+                      CYMO 6698 Endoscopy USB Recording Camera
                     </Link>
                     <Link
                       href="/AllCategories/Wheelchairs"
                       className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
                     >
-                      Pediatric Wheelchair
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Electric Wheelchair (Motorized)
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Transport Wheelchair
-                    </Link>
-                    <Link
-                      href="/AllCategories/Wheelchairs"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 hover:bg-[#80DEEA]/25 hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#4DD0E1]/30 hover:font-medium hover:translate-x-1.5"
-                    >
-                      Stair Climbing Wheelchair
+                      CYMO 1156.08 High Resolution Endoscopy Camera
                     </Link>
                   </div>
                 </div>

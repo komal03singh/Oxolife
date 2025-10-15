@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Montserrat } from "next/font/google";
+import { Lato, Montserrat } from "next/font/google";
 import "./globals.css";
 import RootProvider from "@/Components/RootProvider";
 import { CartProvider } from "@/app/Context/CartContext";
@@ -10,6 +10,11 @@ import Footer from "@/Components/Footer";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100","200","300","400","500","600","700","800","900"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100","300","400","700","900"],
 });
 
 const geistSans = Geist({
@@ -33,7 +38,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${montserrat.className}`}
+        className={`${lato.className}`}
       >
         <RootProvider>
           <CartProvider>

@@ -12,9 +12,8 @@ function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">About</h3>
           <p className="text-sm leading-relaxed">
-            OxoLife provides trusted, certified medical equipment—from oxygen 
-            concentrators to mobility aids—ensuring comfort, safety, and timely 
-            care for patients and caregivers.
+            Established in 2024, SNK Global Consultancy Services is your trusted partner for top-quality medical machinery from leading brands like Deck Munt, ResMed, and Yuwell.
+            With years of industry experience, we focus on delivering reliable products and lasting relationships built on trust, quality, and care.
           </p>
         </div>
 
@@ -48,15 +47,15 @@ function Footer() {
             <li className="flex items-start gap-2">
               <FaMapMarkerAlt className="mt-1" />
               <span>
-                OxoLife Healthcare Pvt Ltd <br />
-                Lorem ipsum dolor sit, India
+                SNK Global Consultancy Services <br />
+                Ground, 288, Dr Ambedkar Marg, Near Circuit House, Sector 16A, Faridabad-121002, Haryana, India
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <FaPhoneAlt /> <span>+91 98XXX 43210</span>
+              <FaPhoneAlt /> <span>+91 8043842058</span>
             </li>
             <li className="flex items-center gap-2">
-              <FaEnvelope /> <span>support@oxolife.com</span>
+              <FaEnvelope /> <span>support@SNKGlobal.com</span>
             </li>
           </ul>
         </div>
@@ -64,7 +63,7 @@ function Footer() {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} OxoLife. All Rights Reserved.
+        © {new Date().getFullYear()} SNK Global Consultancy Services. All Rights Reserved.
       </div>
     </footer>
   );
