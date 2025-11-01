@@ -169,9 +169,9 @@ function Header() {
         </div>
       </div>
       {/*large screen header*/}
-      <div className="hidden md:flex lg:flex h-33 w-full">
-        <div className="h-30 w-1/4 px-4 py-2">
-          <Image height={400} width={400} src="/logo.png" alt="logo" />
+      <div className="hidden md:flex lg:flex items-center h-33 w-full">
+        <div className="flex justify-center h-[80%] w-[20%] px-4 py-2">
+          <Image height={100} width={300} src="/snkLogoNew.png" alt="logo" />
         </div>
         <div className="w-full h-full">
           <div className="flex items-center h-[70%] ">
