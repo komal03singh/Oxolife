@@ -69,7 +69,7 @@ function Header() {
       <div className="flex flex-col md:hidden lg:hidden h-32 w-full gap-3 ">
         <div className="flex">
           <div className="h-18 w-[40%] px-4 py-2">
-            <Image height={300} width={600} src="/logo.png" alt="logo" />
+            <Image height={300} width={600} src="/snkLogoNew.png" alt="logo" />
           </div>
           <div className="flex w-[60%] h-[80%] gap-4 items-center justify-end text-2xl">
             <Link href="" className="flex flex-col justify-center items-center">
