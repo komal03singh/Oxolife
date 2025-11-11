@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { TiStarburst } from "react-icons/ti";
 import ProductRange from "@/Components/ProductRange";
 import Bestseller from "@/Components/Bestseller";
 import Testimonials from "@/Components/Testimonials";
@@ -11,6 +12,25 @@ import { motion } from "framer-motion";
 import Link from "next/link"
 
 function HomePage() {
+
+  const ItemsOne = [
+    {
+      icon: <TbTruckDelivery />,
+      title: "Free & Fast Delivery",
+      desc: "All Over India",
+    },
+    {
+      icon: <RiSecurePaymentLine />,
+      title: "Easy & Secure Payments",
+      desc: "UPI . COD . EMI",
+    },
+    {
+      icon: <FaRegHandshake />,
+      title: "Assured Quality Equipments",
+      desc: "100% Original",
+    },
+  ];
+
   const images = [
     "/homepageAsset/oxygenConcentrator.png",
     "/homepageAsset/CPAP.png",
@@ -100,33 +120,43 @@ function HomePage() {
             })}
           </div>
         </div>
-        <div className="flex justify-center mt-4 lg:mt-0 h-[80px] lg:h-[100px] w-full bg-[#26C6DA]/30">
-          <ul className="w-full flex flex-row items-center justify-center gap-3 lg:gap-15">
-            <li className="flex flex-col items-center">
-              <span className="text-xl lg:text-4xl">
-                <TbTruckDelivery />
-              </span>
-              <h4 className="text-xs lg:text-sm text-center font-semibold">Free & Fast Delivery</h4>
-              <p className="text-[9px] lg:text-xs">All Over India</p>
-            </li>
-            <li className="flex flex-col items-center">
-              <span className="text-xl lg:text-4xl">
-                <RiSecurePaymentLine />
-              </span>
-              <h4 className="text-xs lg:text-sm font-semibold text-center">Easy & Secure Payments</h4>
-              <p className="text-[9px] lg:text-xs">UPI . COD . EMI</p>
-            </li>
-            <li className="flex flex-col items-center">
-              <span className="text-xl lg:text-4xl">
-                <FaRegHandshake />
-              </span>
-              <h4 className="text-xs lg:text-sm font-semibold text-center">
-                Assured Quality Equipments
-              </h4>
-              <p className="text-[9px] lg:text-xs">100% Original</p>
-            </li>
-          </ul>
-        </div>
+      <div className="overflow-hidden flex items-center h-[60px] lg:h-[70px] w-full bg-[#26C6DA]/30 mt-6">
+      {/* Outer wrapper */}
+      <motion.div
+        className="flex whitespace-nowrap"
+        animate={{ x: ["0%", "-30%"] }} // move half width (since content is duplicated)
+        transition={{
+          duration: 25, // adjust speed
+          ease: "linear",
+          repeat: Infinity,
+        }}
+      >
+        {/* We duplicate the list twice for a perfect seamless scroll */}
+        {[...Array(2)].map((_, i) => (
+          <div key={i} className="mx-12 flex items-center gap-10 lg:gap-30">
+              {ItemsOne.map((item, index) => (
+              <div
+                key={`${i}-${index}`}
+                className="flex items-center gap-2 min-w-max"
+              >
+                <span className="text-xl lg:text-4xl">{item.icon}</span>
+                <div>
+                  <h4 className="text-xs lg:text-sm font-semibold text-center">
+                    {item.title}
+                  </h4>
+                  <p className="text-[9px] lg:text-xs">{item.desc}</p>
+                </div>
+              </div>
+              ))}
+          </div>
+        ))}
+      </motion.div>
+    </div>
+
+
+
+
+
       </div>
 
       {/* Product Range Slider */}

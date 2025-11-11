@@ -32,14 +32,14 @@ export async function GET(request) {
     {
       id: 4,
       img: "https://www.oxygentimes.com/storage/productlargeimages/sequal-eclipse-51638160122.jpg",
-      name: "AirSep Newlife Intensity 10",
+      name: "AirSep Newlife Intensity 10 Oxygen Concentrator",
       type: "oxygen-concentrators",
       price: 174999,
     },
     {
       id: 5,
       img: "https://www.oxygentimes.com/storage/productlargeimages/image--0011636562156.jpg",
-      name: "Caire Freestyle Comfort 5",
+      name: "Caire Freestyle Comfort 5 Oxygen Concentrator",
       type: "oxygen-concentrators",
       price: 259000,
     },
@@ -68,7 +68,7 @@ export async function GET(request) {
     {
       id: 9,
       img: "https://www.oxygentimes.com/storage/productlargeimages/216915154441706104161.jpg",
-      name: "Oxymed AirSmart Bi-Level Auto",
+      name: "Oxymed AirSmart Bi-Level Auto CPAP Machine",
       type: "cpap",
       price: 38250,
     },

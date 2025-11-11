@@ -34,7 +34,7 @@ function Testimonials() {
       <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#B2EBF2]/60">
         Customer Reviews
       </h1>
-      <h2 className="text-xl lg:text-3xl font-light text-center m-10">
+      <h2 className="text-base lg:text-xl font-light text-center m-10">
         Hear From Our Customers
       </h2>
 

@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { FaBagShopping } from "react-icons/fa6";
+import { BsBagFill } from "react-icons/bs";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -45,7 +47,7 @@ function Bestseller() {
         {/* Oxygen Concentrators */}
         <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
           <h3 className="text-base lg:text-lg font-semibold mb-5">Oxygen Concentrators</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {oxygenProducts.map((p) => (
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -53,7 +55,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -64,12 +66,19 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
+                  <div>
+                    <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
-                  </p>
-                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
-                    ₹{p.price}
-                  </p>
+                    </p>
+                  </div>
+                  <div className="flex justify-between items-center px-3">
+                    <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
+                      ₹{p.price}
+                    </p>
+                    <button className="bg-black p-2 rounded-full">
+                      <BsBagFill className="text-lg text-white" />
+                    </button>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -79,7 +88,7 @@ function Bestseller() {
         {/* CPAP & BiPAP */}
         <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
           <h3 className="text-lg font-semibold mb-5">CPAP and BiPAP</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {cpapProducts.map((p) => (
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -87,7 +96,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -98,12 +107,19 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
+                  <div>
+                    <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
-                  </p>
-                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
-                    ₹{p.price}
-                  </p>
+                    </p>
+                  </div>
+                  <div className="flex flex-col lg:flex-row justify-between lg:items-center px-3">
+                    <p className="font-medium text-sm md:text-base lg:text-base text-left">
+                      ₹{p.price}
+                    </p>
+                    <button className="bg-black text-white py-2 px-5 text-sm rounded-3xl">
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -113,7 +129,7 @@ function Bestseller() {
         {/* wheelchairs */}
         <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
           <h3 className="text-lg font-semibold mb-5">Wheelchairs</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {wheelchairProducts.map((p) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -121,7 +137,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-[#e7e6e6] flex flex-col items-center rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -132,12 +148,19 @@ function Bestseller() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
+                  <div>
+                    <p className="font-light text-sm md:text-base lg:text-base text-left w-full">
                     {p.name}
-                  </p>
-                  <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
-                    ₹{p.price}
-                  </p>
+                    </p>
+                  </div>
+                  <div className="flex justify-between items-center px-3">
+                    <p className="font-medium text-sm md:text-base lg:text-base text-left">
+                      ₹{p.price}
+                    </p>
+                    <button className="bg-black text-white py-2 px-5 text-sm rounded-3xl">
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </motion.div>
             ))}

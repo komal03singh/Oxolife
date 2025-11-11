@@ -83,7 +83,7 @@ function Header() {
                 </span>
               )}
             </Link>
-            <div className="flex justify-center items-center gap-1 bg-[#BDBDBD] h-10 rounded-l-full px-3 overflow-hidden">
+            <div className="flex justify-center items-center gap-1 bg-[#B2EBF2] h-10 rounded-l-full px-3 overflow-hidden">
               <span>
                 <PiPhoneCallThin className="text-xl" />
               </span>
@@ -226,7 +226,7 @@ function Header() {
               </Link>
               <motion.div
                 initial={{ x: 0, width: 130 }}
-                className="absolute right-0 flex justify-center items-center gap-1 bg-[#BDBDBD] h-12 rounded-l-full px-3 overflow-hidden"
+                className="absolute right-0 flex justify-center items-center gap-1 bg-[#B2EBF2] h-12 rounded-l-full px-3 overflow-hidden"
               >
                 <motion.span animate={controls}>
                   <PiPhoneCallThin className="text-2xl" />
