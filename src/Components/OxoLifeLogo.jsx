@@ -59,7 +59,7 @@ export default function OxoLifeLogo({ onFinish }) {
   }, [onFinish]);
 
   return (
-    <svg width="750" height="225" viewBox="0 0 500 180">
+    <svg width="1200" height="225" viewBox="0 0 400 180">
       <image height={200} width={200} href="/face.png" alt="exhaling air" />
 
       {/* Bubble that becomes O */}
@@ -68,9 +68,9 @@ export default function OxoLifeLogo({ onFinish }) {
       {/* Final O */}
       <circle
         ref={oRef}
-        cx="190"
+        cx="410"
         cy="48"
-        r="45"
+        r="30"
         stroke="#80DEEA"
         strokeWidth="2"
         fill="none"
@@ -81,66 +81,91 @@ export default function OxoLifeLogo({ onFinish }) {
       <g fontFamily="Montserrat, sans-serif" fontSize="70" fill="#0F172A">
         <text
           ref={(el) => (lettersRef.current[0] = el)}
-          x="229"
+          x="145"
           y="95"
-          fontWeight="100"
+          fontWeight="300"
+          fontSize="100"
           opacity="0"
         >
-          x
+          S
         </text>
         <text
           ref={(el) => (lettersRef.current[1] = el)}
-          x="253"
+          x="182"
           y="95"
-          fontWeight="100"
+          fontWeight="300"
+          fontSize="100"
           opacity="0"
         >
-          o
+          N
         </text>
         <text
           ref={(el) => (lettersRef.current[2] = el)}
-          x="282"
-          y="101"
+          x="228"
+          y="95"
           fill="#80DEEA"
-          fontWeight="600"
+          fontWeight="300"
           fontSize="100"
+          opacity="0"
+        >
+          K
+        </text>
+        <text
+          ref={(el) => (lettersRef.current[3] = el)}
+          x="290"
+          y="95"
+          fontWeight="300"
+          fontSize="100"
+          opacity="0"
+        >
+          G
+        </text>
+        <text
+          ref={(el) => (lettersRef.current[4] = el)}
+          x="340"
+          y="90"
+          fontWeight="300"
+          fontSize="90"
           opacity="0"
         >
           L
         </text>
         <text
-          ref={(el) => (lettersRef.current[3] = el)}
-          x="327"
-          y="95"
-          fontWeight="600"
-          opacity="0"
-        >
-          i
-        </text>
-        <text
-          ref={(el) => (lettersRef.current[4] = el)}
-          x="341"
-          y="95"
-          fontWeight="600"
-          opacity="0"
-        >
-          f
-        </text>
-        <text
           ref={(el) => (lettersRef.current[5] = el)}
-          x="358"
+          x="435"
           y="95"
-          fontWeight="600"
+          fontWeight="300"
+          fontSize="100"
           opacity="0"
         >
-          e
+          B
+        </text>
+        <text
+          ref={(el) => (lettersRef.current[6] = el)}
+          x="487"
+          y="95"
+          fontWeight="300"
+          fontSize="100"
+          opacity="0"
+        >
+          A
+        </text>
+        <text
+          ref={(el) => (lettersRef.current[7] = el)}
+          x="534"
+          y="95"
+          fontWeight="300"
+          fontSize="100"
+          opacity="0"
+        >
+          L
         </text>
       </g>
 
       {/* Tagline */}
       <text
         ref={textRef}
-        x="216"
+        x="420"
         y="105"
         fontSize="13"
         fontWeight="400"

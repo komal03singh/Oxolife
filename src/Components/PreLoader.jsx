@@ -30,7 +30,7 @@ export default function Preloader({ onFinish }) {
         ref={Panel}
         className="w-full h-full bg-[#F5F5F5] flex items-center justify-center"
       >
-        <OxoLifeLogo onFinish={() => setLogoDone(true)} />
+        <OxoLifeLogo onFinish={() => setLogoDone(true)}/>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ function ProductRange() {
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col items-center justify-center bg-[#BDBDBD] w-[40%] rounded-3xl text-xl m-2 p-4">
+            <div className="flex flex-col items-center justify-center bg-[#ebeaea] w-[40%] rounded-3xl shadow-lg text-xl m-2 p-4">
               <h2 className="font-semibold text-base lg:text-lg">CPAP/BiPAP</h2>
               <Link
                 href="/AllCategories/CPAPandBiPAP"
@@ -51,7 +51,7 @@ function ProductRange() {
           </div>
 
           <div className="flex flex-row h-1/2 w-full">
-            <div className="flex flex-col items-center justify-center bg-[#BDBDBD] w-[40%] rounded-3xl text-xl m-2 p-4">
+            <div className="flex flex-col items-center justify-center w-[40%] rounded-3xl text-xl shadow-lg m-2 p-4">
               <h2 className="font-semibold text-base lg:text-lg">Wheelchairs</h2>
               <Link
                 href="/AllCategories/Wheelchairs"

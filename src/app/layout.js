@@ -28,7 +28,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "OxoLife",
+  title: "SNK Global",
   description: "Respiratory e-commerce",
 };
 
