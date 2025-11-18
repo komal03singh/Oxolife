@@ -53,20 +53,20 @@ function HomePage() {
   return (
     <div className="flex flex-col gap-6 w-full min-h-screen h-auto">
       {/* Hero Section */}
-      <div className="h-auto md:h-auto lg:h-[480px] w-full lg:mt-0 mt-5">
-        <div className="flex flex-col md:flex-row lg:flex-row h-[380px] w-full gap-5">
+      <div className="relative h-auto md:h-auto lg:h-screen w-full lg:mt-0 mt-5">
+        <div className="flex flex-col md:flex-row lg:flex-row h-full w-full gap-5">
           {/* LEFT CONTENT */}
           <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-8 tracking-wide">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
               Quality Medical Equipment for Everyone
             </h1>
-            <h4 className="text-sm w-[80%] md:text-lg lg:text-lg lg:w-full lg:ml-6">
-              SNK Global is your trusted partner for top-quality medical machinery
+            <h4 className="text-sm w-[80%] md:text-lg lg:text-lg lg:w-full lg:ml-6 lg:mt-2">
+              <span className="text-[#0285CB]">SNK Global</span> is your trusted partner for top-quality medical machinery
               like{" "}
               <span>
                 <motion.p
                   key={index}
-                  className="text:sm h-10 md:text-lg lg:text-xl font-semibold text-[#26C6DA]"
+                  className="text:sm h-10 md:text-lg lg:text-xl font-semibold text-[#0285CB]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -76,14 +76,14 @@ function HomePage() {
                 </motion.p>
               </span>
             </h4>
-          <Link href="/AllCategories">
+            <Link href="/AllCategories">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-2 lg:w-[180px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-[#B2EBF2]/60 font-semibold text-sm lg:text-lg md:mt-5 lg:mt-1 hover:cursor-pointer"
+              className="flex items-center justify-center gap-2 lg:w-[160px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-black text-white font-semibold text-sm lg:text-base md:mt-5 lg:mt-4 hover:cursor-pointer"
             >
               Buy Now
-              <span className="text-base lg:text-xl flex items-center">
+              <span className="text-base lg:text-lg flex items-center">
                 <BsHandbag />
               </span>
             </motion.button>
@@ -91,7 +91,7 @@ function HomePage() {
           </div>
 
           {/* RIGHT CAROUSEL STACK */}
-          <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center items-center justify-center relative">
+          <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center lg:items-start items-center justify-center relative pt-20">
             {images.map((src, i) => {
               const position = (i - index + images.length) % images.length;
 
@@ -111,7 +111,7 @@ function HomePage() {
                 <motion.img
                   key={i}
                   src={src}
-                  className="absolute w-30 h-30 md:h-50 md:w-50 lg:w-58 lg:h-58 bg-[#6BBF8A]/40 object-contain rounded-full p-4 shadow-xl"
+                  className="absolute w-30 h-30 md:h-50 md:w-50 lg:w-58 lg:h-58 bg-[#0077b6]/40 object-contain rounded-full p-4 shadow-xl"
                   animate={style}
                   initial={false}
                   transition={{ duration: 0.8 }}
@@ -120,17 +120,17 @@ function HomePage() {
             })}
           </div>
         </div>
-      <div className="overflow-hidden flex items-center h-[60px] lg:h-[70px] w-full bg-[#26C6DA]/30 mt-6">
-      {/* Outer wrapper */}
-      <motion.div
-        className="flex whitespace-nowrap"
-        animate={{ x: ["0%", "-30%"] }} // move half width (since content is duplicated)
-        transition={{
+        <div className="absolute bottom-0 overflow-hidden flex items-center h-[60px] lg:h-[70px] w-full bg-[#0077b6] text-white">
+        {/* Outer wrapper */}
+        <motion.div
+          className="flex whitespace-nowrap"
+          animate={{ x: ["0%", "-30%"] }} // move half width (since content is duplicated)
+          transition={{
           duration: 25, // adjust speed
           ease: "linear",
           repeat: Infinity,
-        }}
-      >
+          }}
+        >
         {/* We duplicate the list twice for a perfect seamless scroll */}
         {[...Array(2)].map((_, i) => (
           <div key={i} className="mx-12 flex items-center gap-10 lg:gap-30">
@@ -150,14 +150,10 @@ function HomePage() {
               ))}
           </div>
         ))}
-      </motion.div>
+        </motion.div>
     </div>
 
-
-
-
-
-      </div>
+    </div>
 
       {/* Product Range Slider */}
       <div className="w-full h-auto md:h-auto lg:h-[600px] mt-2">
