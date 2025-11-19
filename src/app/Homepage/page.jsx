@@ -10,7 +10,7 @@ import { FaRegHandshake } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link"
-
+import Image from "next/image"
 function HomePage() {
 
   const ItemsOne = [
@@ -57,10 +57,10 @@ function HomePage() {
         <div className="flex flex-col md:flex-row lg:flex-row h-full w-full gap-5">
           {/* LEFT CONTENT */}
           <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
               Quality Medical Equipment for Everyone
             </h1>
-            <h4 className="text-sm w-[80%] md:text-lg lg:text-lg lg:w-full lg:ml-6 lg:mt-2">
+            <h4 className="text-sm w-[80%] md:text-lg lg:text-xl lg:w-full lg:ml-6 lg:mt-2">
               <span className="text-[#0285CB]">SNK Global</span> is your trusted partner for top-quality medical machinery
               like{" "}
               <span>
@@ -80,7 +80,7 @@ function HomePage() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-2 lg:w-[160px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-black text-white font-semibold text-sm lg:text-base md:mt-5 lg:mt-4 hover:cursor-pointer"
+              className="flex items-center justify-center gap-2 lg:w-[160px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-black text-white font-semibold text-sm lg:text-base md:mt-5 lg:mt-6 hover:cursor-pointer"
             >
               Buy Now
               <span className="text-base lg:text-lg flex items-center">
@@ -91,33 +91,13 @@ function HomePage() {
           </div>
 
           {/* RIGHT CAROUSEL STACK */}
-          <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center lg:items-start items-center justify-center relative pt-20">
-            {images.map((src, i) => {
-              const position = (i - index + images.length) % images.length;
-
-              let style = {};
-              if (position === 0) {
-                // CENTER (front)
-                style = { x: 0, scale: 1.4, zIndex: 3, opacity: 1 };
-              } else if (position === 1) {
-                // RIGHT
-                style = { x: 150, scale: 0.5, zIndex: 2, opacity: 0.3 };
-              } else {
-                // LEFT
-                style = { x: -150, scale: 0.5, zIndex: 2, opacity: 0.3 };
-              }
-
-              return (
-                <motion.img
-                  key={i}
-                  src={src}
-                  className="absolute w-30 h-30 md:h-50 md:w-50 lg:w-58 lg:h-58 bg-[#0077b6]/40 object-contain rounded-full p-4 shadow-xl"
-                  animate={style}
-                  initial={false}
-                  transition={{ duration: 0.8 }}
-                />
-              );
-            })}
+          <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center lg:items-start items-center justify-center relative">
+                <Image 
+                src="/doc.png"
+                height={450}
+                width={450}
+                alt="doc"
+                ></Image>
           </div>
         </div>
         <div className="absolute bottom-0 overflow-hidden flex items-center h-[60px] lg:h-[70px] w-full bg-[#0077b6] text-white">

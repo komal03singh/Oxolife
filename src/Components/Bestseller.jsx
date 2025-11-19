@@ -20,13 +20,13 @@ function Bestseller() {
         const dataOxygen = await resOxygen.json();
         setOxygenProducts(dataOxygen.data.slice(0, 5));
 
-        // Fetch CPAP & BiPAP
+        // Fetch CPAP
         const resCpap = await fetch("/api/products?type=cpap");
         const dataCpap = await resCpap.json();
         setCpapProducts(dataCpap.data.slice(0, 5));
 
-        //fetch wheelchairs
-        const resWheelchairs = await fetch("/api/products?type=wheelchairs");
+        //fetch BiPAP
+        const resWheelchairs = await fetch("/api/products?type=BiPAP");
         const dataWheelchairs = await resWheelchairs.json();
         setWheelchairProducts(dataWheelchairs.data.slice(0, 5));
       } catch (error) {
@@ -39,7 +39,7 @@ function Bestseller() {
 
   return (
     <div className="flex flex-col w-full h-full">
-      <h1 className="h-[70px] lg:h-[90px] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#B2EBF2]/60">
+      <h1 className="h-[70px] lg:h-[90px] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
         Bestsellers
       </h1>
 
@@ -55,7 +55,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -71,12 +71,12 @@ function Bestseller() {
                     {p.name}
                     </p>
                   </div>
-                  <div className="flex justify-between items-center px-3">
-                    <p className="font-medium text-sm md:text-base lg:text-base text-left w-full">
+                  <div className="flex flex-col lg:flex-row justify-between lg:items-center px-3">
+                    <p className="font-medium text-sm md:text-base lg:text-base text-left">
                       ₹{p.price}
                     </p>
-                    <button className="bg-black p-2 rounded-full">
-                      <BsBagFill className="text-lg text-white" />
+                    <button className="bg-black text-white py-2 px-5 text-sm rounded-3xl">
+                      Add to Cart
                     </button>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ function Bestseller() {
 
         {/* CPAP & BiPAP */}
         <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
-          <h3 className="text-lg font-semibold mb-5">CPAP and BiPAP</h3>
+          <h3 className="text-lg font-semibold mb-5">CPAP</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {cpapProducts.map((p) => (
               <motion.div
@@ -96,7 +96,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -128,7 +128,7 @@ function Bestseller() {
 
         {/* wheelchairs */}
         <div className="h-auto md:h-auto lg:h-[400px] w-full p-4">
-          <h3 className="text-lg font-semibold mb-5">Wheelchairs</h3>
+          <h3 className="text-lg font-semibold mb-5">BiPAP</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {wheelchairProducts.map((p) => (
               <motion.div
@@ -137,7 +137,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#B2EBF2]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image

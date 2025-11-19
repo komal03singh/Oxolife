@@ -52,7 +52,7 @@ function ProductRange() {
 
           <div className="flex flex-row h-1/2 w-full">
             <div className="flex flex-col items-center justify-center w-[40%] rounded-3xl text-xl shadow-lg m-2 p-4">
-              <h2 className="font-semibold text-base lg:text-lg">Wheelchairs</h2>
+              <h2 className="font-semibold text-base lg:text-lg">Sleep Diagnosis</h2>
               <Link
                 href="/AllCategories/Wheelchairs"
                 className="text-xs lg:text-sm text-blue-600"
@@ -62,8 +62,8 @@ function ProductRange() {
             </div>
             <div className="relative w-[60%] h-[94%] m-2 rounded-3xl overflow-hidden">
               <Image
-                src="/ProductRange/wheelchair.webp"
-                alt="Wheelchair"
+                src="/sleepingMan.png"
+                alt="Sleeping Man"
                 fill
                 className="object-cover"
               />
