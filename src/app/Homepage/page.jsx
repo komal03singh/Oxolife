@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { TiStarburst } from "react-icons/ti";
 import ProductRange from "@/Components/ProductRange";
+import ProductLogo from "@/Components/ProductLogo.jsx"
+import Advantage from "@/Components/Advantage.jsx";
 import Bestseller from "@/Components/Bestseller";
 import Testimonials from "@/Components/Testimonials";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -39,7 +41,7 @@ function HomePage() {
   const Items = [
     "Home and Portable Oxygen Concentrators",
     "CPAP/BiPAP",
-    "Endoscopy Cameras",
+    "CPAP Masks",
   ];
   const [index, setIndex] = useState(0);
 
@@ -57,16 +59,16 @@ function HomePage() {
         <div className="flex flex-col md:flex-row lg:flex-row h-full w-full gap-5">
           {/* LEFT CONTENT */}
           <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
-              Quality Medical Equipment for Everyone
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
+              SNK Global
             </h1>
-            <h4 className="text-sm w-[80%] md:text-lg lg:text-xl lg:w-full lg:ml-6 lg:mt-2">
-              <span className="text-[#0285CB]">SNK Global</span> is your trusted partner for top-quality medical machinery
+            <h4 className="text-sm w-[60%] md:text-lg lg:text-2xl lg:w-full lg:ml-6 lg:mt-2">
+              Expert in respiratory field and your trusted partner for top-quality medical machinery
               like{" "}
               <span>
                 <motion.p
                   key={index}
-                  className="text:sm h-10 md:text-lg lg:text-xl font-semibold text-[#0285CB]"
+                  className="text:sm h-10 md:text-lg lg:text-2xl font-semibold text-[#0285CB]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -80,7 +82,7 @@ function HomePage() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center gap-2 lg:w-[160px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-black text-white font-semibold text-sm lg:text-base md:mt-5 lg:mt-6 hover:cursor-pointer"
+              className="flex items-center justify-center gap-2 lg:w-[160px] lg:h-12 w-40 h-10 lg:ml-6 rounded-full bg-black text-white font-semibold text-sm lg:text-xl md:mt-5 lg:mt-8 hover:cursor-pointer"
             >
               Buy Now
               <span className="text-base lg:text-lg flex items-center">
@@ -143,6 +145,14 @@ function HomePage() {
       {/* BestSeller Slider */}
       <div className="w-full h-auto md:h-auto lg:h-[1400px] mt-2">
         <Bestseller />
+      </div>
+      {/*product logos*/}
+      <div>
+        <ProductLogo/>
+      </div>
+      {/*Advantages*/}
+      <div>
+        <Advantage/>
       </div>
       {/* Testimonals */}
       <div className="w-full h-[600px] mt-2 overflow-hidden">

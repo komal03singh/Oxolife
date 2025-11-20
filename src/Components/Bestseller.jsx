@@ -26,7 +26,7 @@ function Bestseller() {
         setCpapProducts(dataCpap.data.slice(0, 5));
 
         //fetch BiPAP
-        const resWheelchairs = await fetch("/api/products?type=BiPAP");
+        const resWheelchairs = await fetch("/api/products?type=bipap");
         const dataWheelchairs = await resWheelchairs.json();
         setWheelchairProducts(dataWheelchairs.data.slice(0, 5));
       } catch (error) {
@@ -40,7 +40,7 @@ function Bestseller() {
   return (
     <div className="flex flex-col w-full h-full">
       <h1 className="h-[70px] lg:h-[90px] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
-        Bestsellers
+        Our Products
       </h1>
 
       <div className="flex flex-col w-full h-auto gap-4 mt-3">

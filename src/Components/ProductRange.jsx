@@ -18,7 +18,7 @@ function ProductRange() {
             fill
             className="object-cover"
           />
-          <div className="absolute bottom-3 left-3 lg:bottom-6 lg:left-6 z-10 bg-white rounded-3xl p-4 text-xl shadow-lg">
+          <div className="absolute bottom-3 left-3 lg:bottom-6 lg:left-6 z-10 bg-[#ebeaea] rounded-3xl p-4 text-xl shadow-lg">
             <h2 className="font-semibold text-base lg:text-lg">Oxygen Concentrators</h2>
             <Link
               href="/AllCategories/OxygenConcentrators"
@@ -51,7 +51,7 @@ function ProductRange() {
           </div>
 
           <div className="flex flex-row h-1/2 w-full">
-            <div className="flex flex-col items-center justify-center w-[40%] rounded-3xl text-xl shadow-lg m-2 p-4">
+            <div className="flex flex-col items-center justify-center bg-[#ebeaea] w-[40%] rounded-3xl text-xl shadow-lg m-2 p-4">
               <h2 className="font-semibold text-base lg:text-lg">Sleep Diagnosis</h2>
               <Link
                 href="/AllCategories/Wheelchairs"

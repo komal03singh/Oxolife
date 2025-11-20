@@ -69,7 +69,7 @@ function Header() {
       <div className="flex flex-col md:hidden lg:hidden h-32 w-full gap-3 ">
         <div className="flex">
           <div className="h-18 w-[40%] px-4 py-2">
-            <Image height={300} width={600} src="/snkLogoNew.png" alt="logo" />
+            <Image height={300} width={600} src="/snkNewLogo.png" alt="logo" />
           </div>
           <div className="flex w-[60%] h-[80%] gap-4 items-center justify-end text-2xl">
             <Link href="" className="flex flex-col justify-center items-center">
@@ -171,7 +171,7 @@ function Header() {
       {/*large screen header*/}
       <div className="hidden md:flex lg:flex items-center h-33 w-full">
         <div className="flex justify-center h-[80%] w-[20%] px-4 py-2">
-          <Image height={200} width={300} src="/newLogo.png" alt="logo" />
+          <Image height={100} width={250} src="/snkNewLogo.png" alt="logo" />
         </div>
         <div className="w-full h-full">
           <div className="flex items-center h-[70%] ">

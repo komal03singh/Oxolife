@@ -31,7 +31,7 @@ const testimonials = [
 function Testimonials() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#B2EBF2]/60">
+      <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
         Customer Reviews
       </h1>
       <h2 className="text-base lg:text-xl font-light text-center m-10">
@@ -56,7 +56,7 @@ function Testimonials() {
               <p className="text-base">“{t.text}”</p>
               <div>
                 <h3 className="font-semibold">{t.name}</h3>
-                <span className="text-sm text-[#43c1d1]">{t.role}</span>
+                <span className="text-sm text-[#0077b6]">{t.role}</span>
               </div>
             </div>
           ))}
@@ -79,7 +79,7 @@ function Testimonials() {
               <p className="text-base">“{t.text}”</p>
               <div>
                 <h3 className="font-semibold">{t.name}</h3>
-                <span className="text-sm text-[#43c1d1]">{t.role}</span>
+                <span className="text-sm text-[#0077b6]">{t.role}</span>
               </div>
             </div>
           ))}

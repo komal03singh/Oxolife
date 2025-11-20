@@ -42,9 +42,6 @@ export default function AllProductsPage() {
       return () => clearInterval(interval);
     }, [images.length]);
 
-
-
-
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-6">All Products</h1>
@@ -57,8 +54,6 @@ export default function AllProductsPage() {
     </div>
   );
 }
-
-
 function Pagination({ page, total, setPage }) {
   return (
     <div className="flex justify-center gap-4 mt-8">
