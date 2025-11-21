@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
   return (
-    <div className="border rounded-4xl shadow-sm border-black/10 hover:scale-100 hover:bg-[#B2EBF2]/30 hover:shadow-lg transition-all duration-300 ease-in-out p-6 flex flex-col hover:cursor-pointer">
+    <div className="border rounded-4xl shadow-sm border-black/10 hover:scale-100 hover:bg-[#0077b6]/30 hover:shadow-lg transition-all duration-300 ease-in-out p-6 flex flex-col hover:cursor-pointer">
       <div className="relative w-full h-48 mb-4">
         <Image
           src={product.img}
@@ -24,7 +24,7 @@ export default function ProductCard({ product }) {
       <div className="mt-2">
         {product.discountPrice ? (
           <div className="flex items-center gap-2">
-            <span className="text-xl font-medium text-[#26C6DA]">
+            <span className="text-xl font-medium text-[#0077b6]">
               ₹{product.discountPrice}
             </span>
             <span className="line-through text-gray-400 text-sm">

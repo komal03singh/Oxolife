@@ -21,7 +21,7 @@ export default function Advantages() {
     },
     {
       title: "Qualified and Trained Team",
-      desc: "A highly trained and knowledgeable team with years of experience in healthcare.",
+      desc: "A highly trained and knowledgeable team with 35+ years of experience in healthcare.",
       icon: <Users className="w-10 h-10 text-[#0077b6]" />,
     },
     {
@@ -35,7 +35,7 @@ export default function Advantages() {
     <div className="w-full flex flex-col items-center justify-center">
       {/* Header */}
       <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
-        Morpheus Advantage
+        What Makes Us Stand Out
       </h1>
 
       <h2 className="text-base lg:text-xl font-light text-center my-10">

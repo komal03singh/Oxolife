@@ -55,7 +55,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/30 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -96,7 +96,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-1 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/30 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
@@ -137,7 +137,7 @@ function Bestseller() {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={p.id}
-                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/50 transition-transform duration-300 ease-in-out"
+                className="bg-white border border-black/10 flex flex-col rounded-xl shadow-lg p-2 gap-2 hover:-translate-y-2 hover:cursor-pointer hover:scale-105 hover:bg-[#0077b6]/30 transition-transform duration-300 ease-in-out"
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image

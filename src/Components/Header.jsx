@@ -410,7 +410,7 @@ function Header() {
 
               <li className="group relative py-4">
                 <Link
-                  href="/AllCategories/OxygenConcentrators"
+                  href="/AboutUs"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   About Us
@@ -419,7 +419,7 @@ function Header() {
 
               <li className="group relative py-4">
                 <Link
-                  href="/AllCategories/CPAPandBiPAP"
+                  href="/Services"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   Our Services
@@ -428,7 +428,7 @@ function Header() {
 
               <li className="group relative py-4">
                 <Link
-                  href="/AllCategories/Wheelchairs"
+                  href="/ContactUs"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   Contact Us
@@ -436,7 +436,7 @@ function Header() {
               </li>
 
               <li>
-                <Link href="" className="hover:cursor-pointer">
+                <Link href="/Blogs" className="hover:cursor-pointer">
                   Blogs
                 </Link>
               </li>

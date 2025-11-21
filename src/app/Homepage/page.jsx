@@ -68,7 +68,7 @@ function HomePage() {
               <span>
                 <motion.p
                   key={index}
-                  className="text:sm h-10 md:text-lg lg:text-2xl font-semibold text-[#0285CB]"
+                  className="text:sm h-10 md:text-lg lg:text-2xl font-semibold text-[#0285CB] mt-2"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
