@@ -38,8 +38,8 @@ function Bestseller() {
   }, []);
 
   return (
-    <div className="flex flex-col w-full h-full">
-      <h1 className="h-[70px] lg:h-[90px] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
+    <div className="flex flex-col items-center w-full h-full">
+      <h1 className="h-[60px] lg:h-[70px] w-[99%] rounded-lg flex items-center justify-center text-lg lg:text-2xl font-medium bg-[#0077b6] text-white">
         Our Products
       </h1>
 

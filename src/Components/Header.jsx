@@ -59,9 +59,9 @@ function Header() {
   }, [controls]);
 
   return (
-    <div className=" lg:h-40 w-full">
-      <div className=" bg-black flex justify-center items-center w-full h-7">
-        <h1 className="text-white text-xs font-semibold">
+    <div className="flex flex-col items-center lg:h-35 w-full mt-2">
+      <div className=" bg-[#0077b6] flex justify-center items-center w-[99%] rounded-lg h-8">
+        <h1 className="text-white text-sm font-semibold">
           Trusted Equipments, Trusted Care
         </h1>
       </div>
@@ -105,7 +105,7 @@ function Header() {
               />
 
               <div className="absolute left-22 text-sm top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none flex items-center">
-                <div className="overflow-hiddenh-6">
+                <div className="overflow-hidden">
                   <AnimatePresence mode="wait">
                     {!value && (
                       <motion.div
@@ -169,84 +169,20 @@ function Header() {
         </div>
       </div>
       {/*large screen header*/}
-      <div className="hidden md:flex lg:flex items-center h-33 w-full">
-        <div className="flex justify-center h-[80%] w-[20%] px-4 py-2">
-          <Image height={100} width={250} src="/snkNewLogo.png" alt="logo" />
+      <div className="hidden md:flex lg:flex h-24 w-full">
+        <div className="flex justify-center h-full w-[20%] p-3">
+          <Image height={30} width={180} src="/snkNewLogo.png" alt="logo" />
         </div>
         <div className="w-full h-full">
-          <div className="flex items-center h-[70%] ">
+          <div className="flex items-center h-full ">
             <div className="w-9/12 h-full flex items-center justify-center">
-              <div className="relative w-3/4">
-                <input
-                  className="px-4 py-2 w-full border border-black/20 outline-none rounded-full"
-                  type="text"
-                  placeholder="Search for"
-                  value={value}
-                  onChange={(e) => setValue(e.target.value)}
-                />
 
-                {/* only show animated fake placeholder when input is empty */}
-                <div className="absolute left-26 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none flex items-center">
-                  <div className="overflow-hidden h-6">
-                    <AnimatePresence mode="wait">
-                      {!value && (
-                        <motion.div
-                          key={index}
-                          initial={{ y: 8, opacity: 0 }}
-                          animate={{ y: 0, opacity: 1 }}
-                          exit={{ y: -8, opacity: 0 }}
-                          transition={{ duration: 0.35, ease: "easeInOut" }}
-                          className="h-5"
-                        >
-                          {searchItems[index]}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </div>
-              </div>
-              <button className="text-2xl px-4 py-1">
-                <ImSearch />
-              </button>
-            </div>
-            <div className="flex w-3/12 h-full items-center gap-6 text-3xl">
-              <Link
-                href=""
-                className="flex flex-col justify-center items-center"
-              >
-                <PiUserLight />
-              </Link>
-              <Link href="/Cart" className="relative">
-                <CiShoppingCart className="text-3xl" />
-                {cartCount >= 0 && (
-                  <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-                    {cartCount}
-                  </span>
-                )}
-              </Link>
-              <motion.div
-                initial={{ x: 0, width: 130 }}
-                className="absolute right-0 flex justify-center items-center gap-1 bg-black text-white h-12 rounded-l-full px-3 overflow-hidden"
-              >
-                <motion.span animate={controls}>
-                  <PiPhoneCallThin className="text-2xl" />
-                </motion.span>
-                <p className="text-sm whitespace-nowrap font-semibold pr-4">
-                  Call Us
-                </p>
-              </motion.div>
-            </div>
-          </div>
-
-          <div className="rounded-l-full h-[30%] bg-[#0077b6] text-white">
-            <ul className="h-full flex justify-evenly items-center gap-3 text-sm">
+            <div className="rounded-l-full h-[30%]">
+            <ul className="h-full flex justify-evenly items-center gap-7 text-base">
 
               <li>
                 <Link href="/Homepage">
                   <h4 className="hover:cursor-pointer flex items-center gap-2">
-                    <span className="text-xl">
-                      <IoHomeOutline />
-                    </span>
                     Home
                   </h4>
                 </Link>
@@ -257,12 +193,9 @@ function Header() {
                   href="/AllCategories"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
-                  <span className="text-lg">
-                    <GrList />
-                  </span>
                   All Products
                 </Link>
-                <div className="opacity-0 invisible grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-2 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#F5F5F5] text-black w-[960px] gap-4 z-40">
+                <div className="opacity-0 invisible grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-5 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#0077b6]/80 text-white w-[960px] gap-4 z-40">
                   <div className="flex flex-col ">
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
@@ -441,6 +374,39 @@ function Header() {
                 </Link>
               </li>
             </ul>
+          </div>
+              
+            </div>
+            <div className="flex w-3/12 h-full items-center gap-3 px-3 text-3xl">
+              <button className="text-2xl py-1">
+                <ImSearch />
+              </button>
+              <Link
+                href=""
+                className="flex flex-col justify-center items-center"
+              >
+                <PiUserLight />
+              </Link>
+              <Link href="/Cart" className="relative">
+                <CiShoppingCart className="text-3xl" />
+                {cartCount >= 0 && (
+                  <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {cartCount}
+                  </span>
+                )}
+              </Link>
+              <motion.div
+                initial={{ x: 0, width: 130 }}
+                className="absolute right-2 flex justify-center items-center gap-1 bg-black text-white h-12 rounded-full px-3 overflow-hidden"
+              >
+                <motion.span animate={controls}>
+                  <PiPhoneCallThin className="text-2xl" />
+                </motion.span>
+                <p className="text-sm whitespace-nowrap font-semibold pr-4">
+                  Call Us
+                </p>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function Advantages() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       {/* Header */}
-      <h1 className="h-[70px] lg:h-[90px] w-full flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
+      <h1 className="h-[60px] lg:h-[70px] w-[99%] rounded-lg flex items-center justify-center text-lg lg:text-2xl font-medium bg-[#0077b6] text-white">
         What Makes Us Stand Out
       </h1>
 

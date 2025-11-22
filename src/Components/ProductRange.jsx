@@ -6,7 +6,7 @@ import Link from "next/link";
 function ProductRange() {
   return (
     <div className="flex flex-col w-full h-full gap-4">
-      <h1 className="h-[70px] lg:h-[15%] flex items-center justify-center text-xl lg:text-3xl font-semibold bg-[#0077b6] text-white">
+      <h1 className="h-[60px] lg:h-[10%] flex items-center justify-center text-xl lg:text-2xl mx-2 rounded-lg font-medium bg-[#0077b6] text-white">
         Shop By Category
       </h1>
 

@@ -55,14 +55,14 @@ function HomePage() {
   return (
     <div className="flex flex-col gap-6 w-full min-h-screen h-auto">
       {/* Hero Section */}
-      <div className="relative h-auto md:h-auto lg:h-screen w-full lg:mt-0 mt-5">
+      <div className="flex flex-col items-center h-auto md:h-auto lg:h-auto w-full lg:mt-0 mt-5">
         <div className="flex flex-col md:flex-row lg:flex-row h-full w-full gap-5">
           {/* LEFT CONTENT */}
           <div className="w-full h-1/2 md:h-full items-center md:items-start md:px-6 lg:px-3 text-center md:text-left lg:w-1/2 flex flex-col gap-2">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15 tracking-wide">
-              SNK Global
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold w-full lg:w-[80%] md:w-full lg:ml-6 md:mt-8 lg:mt-15">
+              S<span className="text-[#0285CB]">N</span>K Global
             </h1>
-            <h4 className="text-sm w-[60%] md:text-lg lg:text-2xl lg:w-full lg:ml-6 lg:mt-2">
+            <h4 className="text-sm w-[60%] md:text-lg lg:text-2xl lg:w-full lg:ml-6 lg:mt-2 tracking-wide">
               Expert in respiratory field and your trusted partner for top-quality medical machinery
               like{" "}
               <span>
@@ -96,16 +96,16 @@ function HomePage() {
           <div className="w-full h-1/2 md:h-full lg:w-1/2 flex md:items-center lg:items-start items-center justify-center relative">
                 <Image 
                 src="/doc.png"
-                height={450}
-                width={450}
+                height={400}
+                width={400}
                 alt="doc"
                 ></Image>
           </div>
         </div>
-        <div className="absolute bottom-0 overflow-hidden flex items-center h-[60px] lg:h-[70px] w-full bg-[#0077b6] text-white">
+        <div className="overflow-hidden flex items-center h-[50px] lg:h-[60px] w-[99%] bg-[#ebeaea] shadow-lg rounded-lg text-black">
         {/* Outer wrapper */}
         <motion.div
-          className="flex whitespace-nowrap"
+          className="flex whitespace-nowrap lg:px-4"
           animate={{ x: ["0%", "-30%"] }} // move half width (since content is duplicated)
           transition={{
           duration: 25, // adjust speed
