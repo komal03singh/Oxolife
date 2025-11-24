@@ -5,10 +5,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.oxygentimes.com",
+        pathname: "/storage/productlargeimages/**",
       },
     ],
   },
 };
 
 export default nextConfig;
+
 

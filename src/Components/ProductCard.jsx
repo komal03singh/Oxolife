@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useCart } from "@/app/Context/CartContext";
 import { motion } from "framer-motion";
+import Link from "next/link"
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
@@ -16,7 +17,7 @@ export default function ProductCard({ product }) {
         />
       </div>
 
-      <h2 className="text-lg font-light mb-2 h-15 line-clamp-2">
+      <h2 className="text-base font-light mb-2 h-15 line-clamp-2">
         {product.name}
       </h2>
 
@@ -24,7 +25,7 @@ export default function ProductCard({ product }) {
       <div className="mt-2">
         {product.discountPrice ? (
           <div className="flex items-center gap-2">
-            <span className="text-xl font-medium text-[#0077b6]">
+            <span className="text-base font-medium text-[#0077b6]">
               ₹{product.discountPrice}
             </span>
             <span className="line-through text-gray-400 text-sm">
@@ -32,29 +33,31 @@ export default function ProductCard({ product }) {
             </span>
           </div>
         ) : (
-          <span className="text-xl font-medium text-gray-800">
+          <span className="text-base font-medium text-gray-800">
             ₹{product.price}
           </span>
         )}
       </div>
 
     
-      <div className="mt-5 flex gap-4">
+      <div className="mt-5 flex gap-3">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className=" py-2 px-5 rounded-full bg-black text-white cursor-pointer"
+          className=" py-1.5 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
           onClick={() => addToCart(product)}
         >
           Add to Cart
         </motion.button>
-        <motion.button
+        <Link href={`/productSingle/${product.id}`}>
+          <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="py-2 px-5 rounded-full bg-black text-white cursor-pointer"
-        >
+          className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
+          >
           View
-        </motion.button>
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

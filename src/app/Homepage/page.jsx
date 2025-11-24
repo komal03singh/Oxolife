@@ -102,7 +102,7 @@ function HomePage() {
                 ></Image>
           </div>
         </div>
-        <div className="overflow-hidden flex items-center h-[50px] lg:h-[60px] w-[99%] bg-[#ebeaea] shadow-lg rounded-lg text-black">
+        <div className="overflow-hidden flex items-center h-[50px] lg:h-[60px] w-[99%] bg-[#F6F6F6] shadow-lg rounded-lg text-black">
         {/* Outer wrapper */}
         <motion.div
           className="flex whitespace-nowrap lg:px-4"
