@@ -11,7 +11,7 @@ function Footer() {
         
         {/* About Section */}
         <div>
-          <div className="border-1 bg-white flex justify-center h-[25%] w-[80%] p-3">
+          <div className="bg-white flex justify-center h-[28%] w-1/2 lg:w-[80%] p-2">
             <Image height={30} width={180} src="/snkNewLogo.png" alt="logo" />
           </div>
           <h3 className="text-lg font-semibold mb-4 mt-5">About</h3>

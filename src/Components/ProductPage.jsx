@@ -50,9 +50,9 @@ const ProductPage = ({ id }) => {
     <div className="min-h-screen bg-blue-100/50 flex items-center justify-center">
       <div className="w-full bg-white rounded-xl shadow-2xl overflow-hidden">
         {/* --- Main Product Content Grid --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
           {/* === Left Column: Image and Designer Info === */}
-          <div className="relative bg-gray-50 p-8 lg:p-16 flex flex-col justify-center min-h-[600px]">
+          <div className="relative bg-gray-50 p-8 lg:p-16 flex flex-col sticky top-0 justify-center min-h-[600px]">
             {/* Product Image */}
             <div className="flex items-center justify-center pt-24 pb-12">
               {product ? (
@@ -77,7 +77,7 @@ const ProductPage = ({ id }) => {
           </div>
 
           {/* === Right Column: Details and Purchase === */}
-          <div className="bg-[#0077b6]/20 p-8 lg:p-16 flex flex-col space-y-8">
+          <div className="bg-[#0077b6]/20 p-8 lg:p-16 flex flex-col space-y-8 h-screen overflow-y-scroll scrollbar-hide">
             {/* Product Title and SKU */}
             <section>
               <h1 className="text-3xl font-light text-gray-900 leading-snug">
