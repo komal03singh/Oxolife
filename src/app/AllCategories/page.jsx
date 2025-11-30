@@ -2,15 +2,14 @@
 import ProductCard from "@/Components/ProductCard";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link"
+import Link from "next/link";
 import { BsHandbag } from "react-icons/bs";
 
 export default function AllProductsPage() {
-
   const [allProducts, setAllProducts] = useState([]);
   const [allPage, setAllPage] = useState(1);
   const [allTotal, setAllTotal] = useState(1);
-  const limit = 6;
+  const limit = 12;
 
   useEffect(() => {
     async function fetchAll() {
@@ -22,31 +21,70 @@ export default function AllProductsPage() {
     fetchAll();
   }, [allPage]);
 
-
   const images = [
-      "/homepageAsset/oxygenConcentrator.png",
-      "/homepageAsset/CPAP.png",
-      "/homepageAsset/endoscopy-camera.png",
-    ];
-    const Items = [
-      "Home and Portable Oxygen Concentrators",
-      "CPAP/BiPAP",
-      "Endoscopy Cameras",
-    ];
-    const [index, setIndex] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setIndex((prev) => (prev + 1) % images.length);
-      }, 3000);
-      return () => clearInterval(interval);
-    }, [images.length]);
+    "/homepageAsset/oxygenConcentrator.png",
+    "/homepageAsset/CPAP.png",
+    "/homepageAsset/endoscopy-camera.png",
+  ];
+  const Items = [
+    "Home and Portable Oxygen Concentrators",
+    "CPAP/BiPAP",
+    "Endoscopy Cameras",
+  ];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <div className="p-6">
-      <div className="mb-8">
+      <div>
         <h1 className="text-2xl font-bold ">All Products</h1>
-        <p className="text-sm font-medium pt-2">Explore our wide range of Oxygen Conecentrators and CPAP/BiPAP</p>
+        <p className="text-sm font-medium pt-2">
+          Explore our wide range of Oxygen Conecentrators and CPAP/BiPAP
+        </p>
+      </div>
+      <div className="flex gap-3 my-5">
+        <Link href={`/AllCategories/oxygen-concentrators`}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
+          >
+            Oxygen Concentrators
+          </motion.button>
+        </Link>
+        <Link href={`/AllCategories/cpap`}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
+          >
+            CPAP
+          </motion.button>
+        </Link>
+        <Link href={`/AllCategories/bipap`}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
+          >
+            BiPAP
+          </motion.button>
+        </Link>
+        <Link href={`/AllCategories/Masks`}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer"
+          >
+            Masks
+          </motion.button>
+        </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {allProducts.map((product) => (

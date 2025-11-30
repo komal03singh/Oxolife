@@ -63,10 +63,11 @@ function AboutUs() {
     <div>
         <div className='px-4 mt-5'>
 
-            <div className='flex flex-col lg:flex-row gap-3'>
-                <div className='w-1/2 rounded-lg flex justify-center'>
+            <div className='flex flex-col lg:flex-row items-center gap-5 px-6'>
+
+              <div className='w-1/2 rounded-lg flex justify-center'>
                     <Image
-                        src="/about1.png"
+                        src="/team.png"
                         alt="docTeam"
                         width={700}
                         height={600}
@@ -75,23 +76,19 @@ function AboutUs() {
                     </Image>
                 </div>
 
-                <div className='w-1/2 px-10 py-5 pt-6'>
+              <div className='flex justify-center w-1/2 px-5 py-5'>
                     
 
-                    <div className="h-full w-full flex flex-col gap-3 items-start lg:pr-12">
+                    <div className="h-full w-full flex flex-col gap-3 justify-center items-start lg:pr-12">
                         <h3 className="flex min-h-7 items-center justify-center gap-2 rounded-full px-3.5 pb-px text-sm font-medium md:text-base bg-[#0077b6]/30 text-black">About Us</h3>
-                        <h4 className=" text-left text-3xl font-medium md:text-4xl w-full">Meet the Faces Behind Our Success</h4>
-                        <p className=" w-full text-pretty text-left text-lg font-light md:text-xl text-[#787882]">We <span className='font-semibold text-black'>SNK Global Consultancy Services</span> , are one of the leading
+                        <h4 className=" text-left text-xl font-medium md:text-3xl w-full">Expert in Respiratory Field </h4>
+                        <p className=" w-full text-pretty text-left text-base font- md:text-lg ">We <span className='font-semibold text-black'>SNK Global Consultancy Services</span> , are one of the leading
                         dealers of Medical Machinery In Different Brand Like Philips, Resmed and Yuwell etc. Since we
                         have more than a decade of industrial experience, we have created a niche in this domain. We deal in
                         top quality products of renowned brands only. We at SNK Global Consultancy Services believe in
                         long term relations with our customers.</p>
                     </div >
-
-                    
                 </div>
-
-                
             </div>
         </div>
 

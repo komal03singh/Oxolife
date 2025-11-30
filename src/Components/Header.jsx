@@ -402,9 +402,9 @@ function Header() {
                 <motion.span animate={controls}>
                   <PiPhoneCallThin className="text-2xl" />
                 </motion.span>
-                <p className="text-sm whitespace-nowrap font-semibold pr-4">
+                <a href="/ContactUs" className="text-sm whitespace-nowrap font-semibold pr-4">
                   Call Us
-                </p>
+                </a>
               </motion.div>
             </div>
           </div>

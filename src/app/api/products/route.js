@@ -9,7 +9,7 @@ export async function GET(request) {
   const products = [
     {
       id: 1,
-      img: "https://www.oxygentimes.com/storage/productlargeimages/everflo164674135016592471721659604289.jpg",
+      img: "/Products/5L-Philips-OC.webp",
       name: "Philips Everflo 5 Liter Oxygen Concentrator",
       type: "oxygen-concentrators",
       price: 43700,
