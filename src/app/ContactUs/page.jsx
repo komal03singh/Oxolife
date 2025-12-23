@@ -7,10 +7,10 @@ export default function Contact() {
       <section className="relative flex justify-between items-center h-[200px] lg:h-[390px] w-[90%] rounded-l-2xl ">
         {/* Background Image */}
         <Image
-          src="/contact.jpeg"
+          src="/contact2.jpeg"
           alt="sleeping"
-          width={900}
-          height={1000}
+          width={700}
+          height={400}
           className="object-cover w-full h-full rounded-l-2xl"
         />
 

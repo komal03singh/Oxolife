@@ -12,10 +12,10 @@ export default function Services() {
       <section className="relative flex justify-between items-center h-[200px] lg:h-[390px] w-[90%] rounded-l-2xl ">
         {/* Background Image */}
         <Image
-          src="/sleeping.jpg"
+          src="/services.jpeg"
           alt="sleeping"
-          width={1100}
-          height={1000}
+          width={900}
+          height={700}
           className="object-cover w-full h-full rounded-l-2xl"
         />
 
@@ -143,7 +143,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             viewport={{amount:0.2}}
           className='bg-black text-white h-auto p-4 shadow-gray-600 shadow-lg'>
-            <h3 className='text-sm lg:text-xl font-extrabold px-2 md:text-sm'>Expertise</h3>
+            <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Expertise</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> Our team has <span className="font-semibold">35+ years</span> of experience in the respiratory care industry, ensuring that our clients receive the best possible service.</p>
           </motion.div >
 
@@ -153,7 +153,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{amount:0.2}}
             className=' bg-black text-white h-auto p-4 ml-10 shadow-gray-600 shadow-md'>
-            <h3 className='text-sm lg:text-xl font-extrabold px-2 md:text-sm'>Quality Products</h3>
+            <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Quality Products</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> We offer high-quality products from leading manufacturers, ensuring that our clients receive the best possible outcomes.</p>
           </motion.div>
 
@@ -163,7 +163,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 1 }}
             viewport={{amount:0.2}}
             className=' bg-black text-white h-auto p-4 shadow-gray-600 shadow-md'>
-            <h3 className='text-sm lg:text-xl font-extrabold px-2 md:text-sm'>Personalized Support</h3>
+            <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Personalized Support</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> We prioritize building strong relationships with our clients, providing personalized support and service to meet their unique needs.</p>
           </motion.div>
 

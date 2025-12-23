@@ -52,14 +52,14 @@ function Footer() {
               <FaMapMarkerAlt className="mt-1 text-lg" />
               <span>
                 SNK Global Consultancy Services <br />
-                Ground, 288, Dr Ambedkar Marg, Near Circuit House, Sector 16A, Faridabad-121002, Haryana, India
+                Basement, Shop no-10, Part-01, Sector-16A, Huda Market, Faridabad, Haryana, 121002
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <FaPhoneAlt /> <span>+91 8043842058</span>
+              <FaPhoneAlt /> <span>+91-9811522009 or +91-9289700933</span>
             </li>
             <li className="flex items-center gap-2">
-              <FaEnvelope /> <span>support@SNKGlobal.com</span>
+              <FaEnvelope /> <span>rajeev.anand@snkgcs.com</span>
             </li>
           </ul>
         </div>

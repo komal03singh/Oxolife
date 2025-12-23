@@ -34,19 +34,20 @@ function ContactContent() {
           {/* Call Center */}
           <div>
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-            <p className="text-gray-600">+91-92895 20606</p>
+            <p className="text-gray-600">+91-9811522009 or</p>
+            <p className="text-gray-600">+91-9289700933</p>
           </div>
 
           {/* Our Location */}
           <div>
             <h3 className="text-xl font-semibold mb-2">Our Location</h3>
-            <p className="text-gray-600">SNK Global Consultancy Services Ground, 288, Dr Ambedkar Marg, Near Circuit House, Sector 16A, Faridabad-121002, Haryana, India</p>
+            <p className="text-gray-600">SNK Global Consultancy Services Basement, Shop no-10, Part-01, Sector-16A, Huda Market, Faridabad, Haryana, 121002 </p>
           </div>
           
           {/* Email */}
           <div>
             <h3 className="text-xl font-semibold mb-2">Email</h3>
-            <p className="text-[#0077b6]">support@SNKGlobal.com</p>
+            <p className="text-[#0077b6]">rajeev.anand@snkgcs.com</p>
           </div>
 
           {/* Social Network */}

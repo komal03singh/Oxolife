@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function ProductRange() {
   return (
@@ -19,13 +20,16 @@ function ProductRange() {
             className="object-cover"
           />
           <div className="absolute bottom-3 left-3 lg:bottom-6 lg:left-6 z-10 bg-[#F6F6F6] rounded-3xl p-4 text-xl shadow-lg">
-            <h2 className="font-semibold text-base lg:text-lg">Oxygen Concentrators</h2>
-            <Link
-              href="/AllCategories/OxygenConcentrators"
-              className="text-xs lg:text-sm text-blue-600"
+            <h2 className="font-semibold text-base lg:text-lg mb-3">Oxygen Concentrators</h2>
+            <Link href={`/AllCategories/OxygenConcentrators`}>
+            <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer  hover:bg-[#0077b6]"
             >
-              Shop Now
-            </Link>
+            Shop Now
+          </motion.button>
+        </Link>
           </div>
         </div>
 
@@ -40,25 +44,31 @@ function ProductRange() {
               />
             </div>
             <div className="flex flex-col items-center justify-center bg-[#F6F6F6] w-[40%] rounded-3xl shadow-lg text-xl m-2 p-4">
-              <h2 className="font-semibold text-base lg:text-lg">CPAP/BiPAP</h2>
-              <Link
-                href="/AllCategories/CPAPandBiPAP"
-                className="text-xs lg:text-sm text-blue-600"
+              <h2 className="font-semibold text-base lg:text-lg mb-3">CPAP/BiPAP</h2>
+              <Link href={`/AllCategories/CPAPandBiPAP`}>
+              <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer hover:bg-[#0077b6]"
               >
-                Shop Now
-              </Link>
+              Shop Now
+          </motion.button>
+        </Link>
             </div>
           </div>
 
           <div className="flex flex-row h-1/2 w-full">
             <div className="flex flex-col items-center justify-center bg-[#F6F6F6] w-[40%] rounded-3xl text-xl shadow-lg m-2 p-4">
-              <h2 className="font-semibold text-base lg:text-lg">Sleep Diagnosis</h2>
-              <Link
-                href="/AllCategories/Wheelchairs"
-                className="text-xs lg:text-sm text-blue-600"
-              >
-                Shop Now
-              </Link>
+              <h2 className="font-semibold text-base lg:text-lg mb-3">Sleep Diagnosis</h2>
+              <Link href={`/AllCategories/Masks`}>
+                        <motion.button
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="py-2 px-5 rounded-full bg-black text-sm text-white cursor-pointer hover:bg-[#0077b6]"
+                        >
+                          Book Sleep Tests
+                        </motion.button>
+                      </Link>
             </div>
             <div className="relative w-[60%] h-[94%] m-2 rounded-3xl overflow-hidden">
               <Image

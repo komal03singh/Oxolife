@@ -137,8 +137,8 @@ function Header() {
             {menuOpen && (
         <motion.div 
         initial={{ x: 10, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ duration: 0.5, ease: "easeOut" }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="absolute top-8 -left-54 z-20 lg:hidden bg-[#B2EBF2] p-2 py-6 h-80 w-65">
           <ul className="flex flex-col gap-4 text-sm">
             <li>
@@ -180,22 +180,31 @@ function Header() {
             <div className="rounded-l-full h-[30%]">
             <ul className="h-full flex justify-evenly items-center gap-7 text-base">
 
-              <li>
+              <motion.li
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold"
+              >
                 <Link href="/Homepage">
                   <h4 className="hover:cursor-pointer flex items-center gap-2">
                     Home
                   </h4>
                 </Link>
-              </li>
+              </motion.li>
 
-              <li className="group relative py-4">
+              <motion.li
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
                 <Link
                   href="/AllCategories"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   All Products
                 </Link>
-                <div className="opacity-0 invisible grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-5 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#0077b6]/80 text-white w-[960px] gap-4 z-40">
+                <div className="opacity-0 invisible grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-5 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#0077b6]/80 text-white w-[960px] gap-4 z-50">
                   <div className="flex flex-col ">
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
@@ -339,40 +348,56 @@ function Header() {
                     </Link>
                   </div>
                 </div>
-              </li>
+              </motion.li>
 
-              <li className="group relative py-4">
+              <motion.li
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
                 <Link
                   href="/AboutUs"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   About Us
                 </Link>
-              </li>
+              </motion.li>
 
-              <li className="group relative py-4">
+              <motion.li 
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
                 <Link
                   href="/Services"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   Our Services
                 </Link>
-              </li>
+              </motion.li>
 
-              <li className="group relative py-4">
+              <motion.li 
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
                 <Link
                   href="/ContactUs"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   Contact Us
                 </Link>
-              </li>
+              </motion.li>
 
-              <li>
+              <motion.li 
+                initial={{y:0}}
+                whileHover={{y:-4}}
+                transition={{duration:0.2, ease:"easeInOut"}}
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
                 <Link href="/Blogs" className="hover:cursor-pointer">
                   Blogs
                 </Link>
-              </li>
+              </motion.li>
             </ul>
           </div>
               
