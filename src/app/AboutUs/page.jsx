@@ -109,14 +109,12 @@ function AboutUs() {
   return (
     <div>
       <div className="px-14 mt-6">
-        <div className="h-full w-full flex flex-col gap-3 items-start lg:pr-12">
-          <h3 className="flex min-h-7 items-center justify-center gap-2 rounded-full px-3.5 pb-px text-sm font-medium md:text-base bg-[#0077b6]/30 text-black">
-            About Us
-          </h3>
-          <h4 className=" text-left text-xl font-medium md:text-3xl w-full mt-4">
+        <div className="h-full w-full flex flex-col gap-3 justify-center items-center">
+          <h3 className="text-4xl font-bold text-black">About Us</h3>
+          <h4 className="text-center text-[#0077B6] text-xl font-medium md:text-3xl w-full mt-4">
             Your Trusted Partner in Respiratory Care Solutions
           </h4>
-          <p className=" w-full text-pretty text-left text-base font- md:text-lg ">
+          <p className=" w-full text-center text-base font- md:text-lg ">
             We{" "}
             <span className="font-semibold text-black">
               SNK Global Consultancy Services
@@ -132,14 +130,67 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="w-1/2 rounded-lg flex justify-center mt-10">
-        <Image
-          src="/RajeevAnand.jpeg"
-          alt="docTeam"
-          width={500}
-          height={600}
-          className="rounded-lg"
-        ></Image>
+      <div className="w-full py-10 mb-6 px-6 lg:px-14">
+        <h3 className="text-sm font-medium bg-[#0077b6]/30 inline-block px-4 py-1 rounded-full">
+          Our Management
+        </h3>
+        <h2 className="text-3xl md:text-3xl font-medium mt-3 mb-8">
+          Meet Our Leadership Team
+        </h2>
+
+        <div className="flex w-full gap-6">
+          {/* Person 1 */}
+          <div className="w-1/2 flex justify-center">
+            <div className="relative group">
+              <Image
+                src="/RajeevAnand.jpeg"
+                alt="Rajeev Anand"
+                width={400}
+                height={400}
+                className="rounded-lg"
+              />
+
+              {/* Overlay */}
+              <div
+                className="absolute inset-0 rounded-lg 
+                        flex flex-col justify-end p-6
+                        transition-opacity duration-300"
+              >
+                <h3 className="text-white text-2xl font-semibold">
+                  Mr. Rajeev Anand
+                </h3>
+                <p className="text-white/80 text-base">
+                  Founder & Managing Director
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Person 2 */}
+          <div className="w-1/2 flex justify-center">
+            <div className="relative group">
+              <Image
+                src="/RituSharma.jpeg"
+                alt="Ritu Sharma"
+                width={400}
+                height={400}
+                className="rounded-lg"
+              />
+
+              {/* Overlay */}
+              <div
+                className="absolute inset-0 rounded-lg 
+                        flex flex-col justify-end p-6
+                        transition-opacity duration-300"
+              >
+                <h3 className="text-white text-2xl font-semibold">
+                  Mrs. Ritu Sharma
+                </h3>
+                <p className="text-white/80 text-base">Area Sales Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row lg:gap-0 lg:px-28 lg:py-12 gap-10 lg:container lg:mx-auto mt-10">
@@ -193,43 +244,6 @@ function AboutUs() {
             />
           ))}
         </div>
-      </div>
-
-      <div className="w-full py-10 mb-6 px-6 lg:px-24">
-        <h3 className="text-sm font-medium bg-[#0077b6]/30 inline-block px-4 py-1 rounded-full">
-          Our Management
-        </h3>
-        <h2 className="text-3xl md:text-3xl font-medium mt-3 mb-8">
-          Meet Our Leadership Team
-        </h2>
-
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1.2}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 2500 }}
-          breakpoints={{
-            640: { slidesPerView: 2.2 },
-            1024: { slidesPerView: 3.2 },
-          }}
-          className="w-full"
-        >
-          {managementData.map((item, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white shadow-lg p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300">
-                <div className="h-24 w-24 bg-[#0077b6]/20 rounded-full flex items-center justify-center text-3xl font-bold text-[#0077b6] mx-auto">
-                  {item.name.charAt(0)}
-                </div>
-
-                <h3 className="text-xl font-semibold text-center mt-4">
-                  {item.name}
-                </h3>
-                <p className="text-center text-gray-600">{item.role}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
       </div>
     </div>
   );

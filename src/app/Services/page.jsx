@@ -12,7 +12,7 @@ export default function Services() {
       <section className="relative flex justify-between items-center h-[200px] lg:h-[390px] w-[90%] rounded-l-2xl ">
         {/* Background Image */}
         <Image
-          src="/services.jpeg"
+          src="/section.jpg"
           alt="sleeping"
           width={900}
           height={700}
@@ -26,7 +26,7 @@ export default function Services() {
         <div className="absolute z-20 px-4 lg:px-8">
           <div className="flex flex-col gap-2 lg:gap-4 text-white">
             <h2 className="text-2xl lg:text-6xl font-semibold">Our Services</h2>
-            <p className="text-sm lg:text-base font-medium w-full lg:max-w-3/5">
+            <p className="text-sm lg:text-base font-medium w-full lg:max-w-2/5">
               At our organisation, we are committed to delivering high-quality
               respiratory care solutions that support better breathing, improved
               sleep health, and enhanced overall well-being.
