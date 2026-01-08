@@ -10,7 +10,7 @@ export default function ProductCard({ product }) {
     <div className="border rounded-4xl shadow-sm border-black/10 hover:scale-100 hover:bg-[#0077b6]/30 hover:shadow-lg transition-all duration-300 ease-in-out p-6 flex flex-col hover:cursor-pointer">
       <div className="relative w-full h-48 mb-4">
         <Image
-          src={product.img}
+          src={product.images[0]}
           alt={product.name}
           fill
           className="object-contain rounded-lg"
@@ -49,7 +49,7 @@ export default function ProductCard({ product }) {
         >
           Add to Cart
         </motion.button>
-        <Link href={`/productSingle/${product.id}`}>
+        <Link href={`/productSingle/${product._id}`}>
           <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

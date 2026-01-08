@@ -60,7 +60,7 @@ export default function OxoLifeLogo({ onFinish }) {
         <image height={200} width={200} href="/face.png" alt="exhaling air" />
 
         {/* Bubble that becomes O */}
-        <circle ref={bubbleRef} cx="145" cy="80" r="10" fill="#26D6EA" />
+        <circle ref={bubbleRef} cx="145" cy="80" r="10" fill="#0077b6" />
 
         {/* Final O */}
         <circle
@@ -68,7 +68,7 @@ export default function OxoLifeLogo({ onFinish }) {
           cx="418"
           cy="48"
           r="30"
-          stroke="#80DEEA"
+          stroke="#0077b6"
           strokeWidth="2"
           fill="none"
           opacity="0"
@@ -102,7 +102,7 @@ export default function OxoLifeLogo({ onFinish }) {
             x="237"
             y="95"
             fontSize="100"
-            fill="#26D6EA"
+            fill="#0077b6"
             opacity="0"
           >
             K

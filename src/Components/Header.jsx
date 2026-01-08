@@ -197,18 +197,18 @@ function Header() {
                 initial={{y:0}}
                 whileHover={{y:-4}}
                 transition={{duration:0.2, ease:"easeInOut"}}
-                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold">
+                className="group relative py-4 hover:text-[#0077b6] hover:cursor-pointer hover:font-semibold z-50">
                 <Link
                   href="/AllCategories"
                   className=" hover:cursor-pointer flex items-center gap-2"
                 >
                   All Products
                 </Link>
-                <div className="opacity-0 invisible grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-5 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl bg-[#0077b6]/80 text-white w-[960px] gap-4 z-50">
+                <div className="opacity-0 invisible bg-[#F6F6F6] grid grid-cols-4 group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-in-out absolute -left-20 mt-5 shadow-2xl p-4 rounded-b-3xl rounded-tr-3xl text-[#0077b6] w-[960px] gap-4 z-50">
                   <div className="flex flex-col ">
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
-                      className="hover:text-[#0077b6] font-semibold pb-1.5 px-3 text-base"
+                      className="text-black font-semibold pb-1.5 px-3 text-base"
                     >
                       Our Services
                     </Link>
@@ -244,7 +244,7 @@ function Header() {
                     </Link>
                     <Link
                       href="/AllCategories?type=oxygen-concentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-[#0077b6]  hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#0077b6]/30 hover:font-medium hover:translate-x-1.5"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-black  hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#0077b6]/30 hover:font-medium hover:translate-x-1.5"
                     >
                      View More
                     </Link>
@@ -252,7 +252,7 @@ function Header() {
                   <div className="flex flex-col">
                     <Link
                       href="/AllCategories/OxygenConcentrators"
-                      className="hover:text-[#0077b6] font-semibold pb-1.5 px-3 text-base"
+                      className="text-black font-semibold pb-1.5 px-3 text-base"
                     >
                       CPAP Machines
                     </Link>
@@ -282,7 +282,7 @@ function Header() {
                     </Link>
                     <Link
                       href="/AllCategories/OxygenConcentrators"
-                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-[#0077b6] hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#0077b6]/30 hover:font-medium hover:translate-x-1.5"
+                      className="px-4 py-1 rounded-3xl transition-all duration-300 text-black hover:bg-white hover:backdrop-blur-3xl hover:shadow-lg hover:shadow-[#0077b6]/30 hover:font-medium hover:translate-x-1.5"
                     >
                       View More
                     </Link>
@@ -290,7 +290,7 @@ function Header() {
                   <div className="flex flex-col">
                     <Link
                       href="/AllCategories/OxygenConcentrators"
-                      className="hover:text-[#0077b6] font-semibold pb-1.5 px-3 text-base"
+                      className="text-black font-semibold pb-1.5 px-3 text-base"
                     >
                       BiPAP Machines
                     </Link>
@@ -317,7 +317,7 @@ function Header() {
                   <div className="flex flex-col">
                     <Link
                       href="/AllCategories/Wheelchairs"
-                      className="hover:text-[#0077b6] font-semibold pb-1.5 px-3 text-base"
+                      className="text-black font-semibold pb-1.5 px-3 text-base"
                     >
                       CPAP Mask
                     </Link>
@@ -337,7 +337,7 @@ function Header() {
                   <div className="flex flex-col">
                     <Link
                       href=""
-                      className="hover:text-[#0077b6] font-semibold pb-1.5 px-3 text-base"
+                      className="text-black font-semibold pb-1.5 px-3 text-base"
                     >
                       Explore All
                     </Link>
@@ -389,7 +389,7 @@ function Header() {
                 </Link>
               </motion.li>
 
-              <motion.li 
+              {/* <motion.li 
                 initial={{y:0}}
                 whileHover={{y:-4}}
                 transition={{duration:0.2, ease:"easeInOut"}}
@@ -397,7 +397,7 @@ function Header() {
                 <Link href="/Blogs" className="hover:cursor-pointer">
                   Blogs
                 </Link>
-              </motion.li>
+              </motion.li> */}
             </ul>
           </div>
               

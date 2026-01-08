@@ -11,9 +11,10 @@ export default function OxygenConcentratorsPage() {
   useEffect(() => {
     async function fetchOxygen() {
       const resOxygen = await fetch(
-        `/api/products?type=oxygen-concentrators&page=${oxygenPage}&limit=${limit}`
+        `/api/products?type=oxygen concentrators&page=${oxygenPage}&limit=${limit}`
       );
       const data = await resOxygen.json();
+      console.log(data.data)
       setOxygenProducts(data.data);
       setOxygenTotal(data.totalPages);
     }
@@ -25,7 +26,7 @@ export default function OxygenConcentratorsPage() {
       <h1 className="text-2xl font-bold mt-10 mb-6">Oxygen Concentrators</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {oxygenProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product._id} product={product} />
         ))}
       </div>
       <Pagination

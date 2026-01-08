@@ -41,7 +41,7 @@ export default function Services() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            viewport={{ amount:0.2}}
+            viewport={{ amount:0.2,once:true}}
             className="bg-[#0077b6]/40 p-4 m-4 text-left rounded-xl lg:w-1/3"
           >
             <div className="rounded-full w-13 h-13 flex-shrink-0 flex items-center justify-center bg-[#F5F5F5] m-4">
@@ -70,7 +70,7 @@ export default function Services() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{amount:0.2}}
+            viewport={{amount:0.2,once:true}}
             className="bg-[#0077b6]/40 p-4 m-4 text-left rounded-xl lg:w-1/3"
           >
             <div className="rounded-full w-13 h-13 flex-shrink-0 flex items-center justify-center bg-[#F5F5F5] m-4">
@@ -99,7 +99,7 @@ export default function Services() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
-            viewport={{amount:0.2}}
+            viewport={{amount:0.2,once:true}}
             className="bg-[#0077b6]/40 p-4 m-4 text-left rounded-xl lg:w-1/3"
           >
             <div className="rounded-full w-13 h-13 flex-shrink-0 flex items-center justify-center bg-[#F5F5F5] m-4">
@@ -141,7 +141,7 @@ export default function Services() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            viewport={{amount:0.2}}
+            viewport={{amount:0.2,once:true}}
           className='bg-black text-white h-auto p-4 shadow-gray-600 shadow-lg'>
             <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Expertise</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> Our team has <span className="font-semibold">35+ years</span> of experience in the respiratory care industry, ensuring that our clients receive the best possible service.</p>
@@ -151,7 +151,7 @@ export default function Services() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{amount:0.2}}
+            viewport={{amount:0.2,once:true}}
             className=' bg-black text-white h-auto p-4 ml-10 shadow-gray-600 shadow-md'>
             <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Quality Products</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> We offer high-quality products from leading manufacturers, ensuring that our clients receive the best possible outcomes.</p>
@@ -161,7 +161,7 @@ export default function Services() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
-            viewport={{amount:0.2}}
+            viewport={{amount:0.2,once:true}}
             className=' bg-black text-white h-auto p-4 shadow-gray-600 shadow-md'>
             <h3 className='text-sm lg:text-xl font-medium px-2 md:text-sm'>Personalized Support</h3>
             <p className='text-xs lg:text-base font-light px-5 py-2 md:text-xs'> We prioritize building strong relationships with our clients, providing personalized support and service to meet their unique needs.</p>
