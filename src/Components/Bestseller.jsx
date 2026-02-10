@@ -15,7 +15,7 @@ function Bestseller() {
       try {
         // Fetch oxygen concentrators
         const resOxygen = await fetch(
-          "/api/products?type=oxygen-concentrators"
+          "/api/products?type=oxygen concentrator"
         );
         const dataOxygen = await resOxygen.json();
         setOxygenProducts(dataOxygen.data.slice(0, 5));
@@ -59,7 +59,7 @@ function Bestseller() {
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
-                    src={p.img}
+                    src={p.images[0]}
                     alt={p.name}
                     fill
                     className="object-contain rounded-lg"
@@ -100,7 +100,7 @@ function Bestseller() {
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
-                    src={p.img}
+                    src={p.images[0]}
                     alt={p.name}
                     fill
                     className="object-contain rounded-lg"
@@ -141,7 +141,7 @@ function Bestseller() {
               >
                 <div className="relative w-full h-38 md:h-48 lg:h-48 mb-4">
                   <Image
-                    src={p.img}
+                    src={p.images[0]}
                     alt={p.name}
                     fill
                     className="object-contain rounded-lg"
